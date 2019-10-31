@@ -1,0 +1,5 @@
+prilojenie na c# da chete ot seriala arduinoto i da svurzva arduinoto kum servera - arduinoto+ she predava bool ima li piza ili ne i moje da sloja countera na displaya (i da napravq separate counter na c# prilojenieto za da ne bavi seriala)
+
+za 2te c# prilojeniq (formi) mi trqbvat po 2 "socketa" za da chetat i izprashtat
+
+JAVA servera trqbva da ima 
