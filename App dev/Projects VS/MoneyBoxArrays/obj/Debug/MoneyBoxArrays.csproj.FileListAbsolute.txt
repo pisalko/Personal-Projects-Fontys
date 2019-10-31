@@ -1,0 +1,10 @@
+C:\Users\Valio\Desktop\GIT\App dev\Projects VS\MoneyBoxArrays\bin\Debug\MoneyBoxArrays.exe.config
+C:\Users\Valio\Desktop\GIT\App dev\Projects VS\MoneyBoxArrays\bin\Debug\MoneyBoxArrays.exe
+C:\Users\Valio\Desktop\GIT\App dev\Projects VS\MoneyBoxArrays\bin\Debug\MoneyBoxArrays.pdb
+C:\Users\Valio\Desktop\GIT\App dev\Projects VS\MoneyBoxArrays\obj\Debug\MoneyBoxArrays.csprojAssemblyReference.cache
+C:\Users\Valio\Desktop\GIT\App dev\Projects VS\MoneyBoxArrays\obj\Debug\MoneyBoxArrays.MoneyBoxForm.resources
+C:\Users\Valio\Desktop\GIT\App dev\Projects VS\MoneyBoxArrays\obj\Debug\MoneyBoxArrays.Properties.Resources.resources
+C:\Users\Valio\Desktop\GIT\App dev\Projects VS\MoneyBoxArrays\obj\Debug\MoneyBoxArrays.csproj.GenerateResource.cache
+C:\Users\Valio\Desktop\GIT\App dev\Projects VS\MoneyBoxArrays\obj\Debug\MoneyBoxArrays.csproj.CoreCompileInputs.cache
+C:\Users\Valio\Desktop\GIT\App dev\Projects VS\MoneyBoxArrays\obj\Debug\MoneyBoxArrays.exe
+C:\Users\Valio\Desktop\GIT\App dev\Projects VS\MoneyBoxArrays\obj\Debug\MoneyBoxArrays.pdb
