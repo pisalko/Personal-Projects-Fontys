@@ -1,0 +1,5 @@
+Table/Relation 
+Row/Column
+Row/Record/Tuple
+
+A database is a collection of tables (many tabbles in a database).

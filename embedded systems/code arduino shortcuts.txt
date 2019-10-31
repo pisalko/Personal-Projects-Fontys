@@ -1,0 +1,17 @@
+const int RX = 0;
+const int TX = 1;
+const int IRLED = 2;
+const int BUZZER = 3;
+const int LED1R = 4;
+const int LED2G = 5;
+const int LED3B = 6;                 <---------- DEFAULT int names for different functionalities
+const int LED4Y = 7;
+const int KEY1 = 8;
+const int KEY2 = 9;
+const int POT = A0;
+const int NTC = A1;
+const int LDR = A2;
+const int VOLT = A3;
+
+
+for INPUT -> "_PULLUP" makes the value to an integer (1 or 0) (button HIGH - released, button LOW - pressed)

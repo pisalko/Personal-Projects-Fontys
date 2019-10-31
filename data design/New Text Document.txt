@@ -1,0 +1,4 @@
+Common error:
+enabling libraries at the beggining !! (+Skimr)       (library(gapminder))
+
+String use " " !!!

@@ -1,0 +1,10 @@
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Elevator Alarm arduino\bin\Debug\Elevator Alarm arduino.exe.config
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Elevator Alarm arduino\bin\Debug\Elevator Alarm arduino.exe
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Elevator Alarm arduino\bin\Debug\Elevator Alarm arduino.pdb
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Elevator Alarm arduino\obj\Debug\Elevator Alarm arduino.csprojAssemblyReference.cache
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Elevator Alarm arduino\obj\Debug\Elevator_Alarm_arduino.Form1.resources
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Elevator Alarm arduino\obj\Debug\Elevator_Alarm_arduino.Properties.Resources.resources
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Elevator Alarm arduino\obj\Debug\Elevator Alarm arduino.csproj.GenerateResource.cache
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Elevator Alarm arduino\obj\Debug\Elevator Alarm arduino.exe
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Elevator Alarm arduino\obj\Debug\Elevator Alarm arduino.pdb
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Elevator Alarm arduino\obj\Debug\Elevator Alarm arduino.csproj.CoreCompileInputs.cache

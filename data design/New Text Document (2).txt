@@ -1,0 +1,8 @@
+how to read a file
+how to skip?
+how to mutate
+how to summarize
+group_by   - how are they different 
+gather()
+na = c(" ", "NA", "UNKNOWN") - exercise 3
+filter(is.na(showstopper)) - exercise 4

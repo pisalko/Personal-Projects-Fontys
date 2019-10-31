@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nursing Bed Alarm", "Nursing Bed Alarm.csproj", "{1733F43F-113F-4872-987F-50750DD8514C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elevator Alarm arduino", "..\Elevator Alarm arduino\Elevator Alarm arduino.csproj", "{6D580C02-2575-4F2D-A0DF-3B59CB210158}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1733F43F-113F-4872-987F-50750DD8514C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1733F43F-113F-4872-987F-50750DD8514C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1733F43F-113F-4872-987F-50750DD8514C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1733F43F-113F-4872-987F-50750DD8514C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D580C02-2575-4F2D-A0DF-3B59CB210158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D580C02-2575-4F2D-A0DF-3B59CB210158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D580C02-2575-4F2D-A0DF-3B59CB210158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D580C02-2575-4F2D-A0DF-3B59CB210158}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6887E3DF-1B78-41E1-B56E-6CA27EA49D06}
+	EndGlobalSection
+EndGlobal

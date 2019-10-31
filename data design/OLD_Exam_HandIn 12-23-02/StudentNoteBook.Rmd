@@ -1,0 +1,426 @@
+---
+title: "StudentNoteBook"
+author: "Student"
+date: "10/8/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+
+#Don't change this chunk. 
+
+```
+
+## Before you start
+
+Make sure that you have copied the StudentNoteBook to your Exam_HandIn folder, as well as your 2 .CSV files. Test this by running the following chunk
+
+```{r}
+getwd()
+```
+
+Make sure it returns your Exam_HandIn folder. If it does not return, save your StudentNoteBook in the Exam_HandIn folder. If you know that you are saving in the Exam_HandIn folder you can continue. 
+
+Now add your name:
+
+Name: Valentin Vasilev
+
+Studentnumber: 3860140
+
+Class:  PC05
+
+
+## Introduction text
+
+In this exam we will go over some of the assignments you made earlier. Based on the "introduction to the tidyverse", the "working with data in the tidyverse", and the "data visualisation with ggplot2" courses. In three sections we will focus on some of the questions and theory presented in these courses, you might actually recognize the dataset and some of the questions.
+
+Starting with a recap of the introduction of the Tidyverse we will look at some exercises of the Gapminder we worked with. 
+As we will be using different libraries you need to enable these:
+
+```{r}
+library(gapminder)
+library(ggplot2)
+library(tidyverse)
+library(dplyr)
+library(readr)
+
+
+```
+
+Let's refresh our minds by looking at the gapminder dataset. 
+
+```{r}
+#View(gapminder)
+# Use the View function if you want to see the whole table for yourself. This will have no effect on your final output.
+view(gapminder)
+#head(gapminder)
+#the header code is only for our purposes to make it easier to work with the data set. someone reading the final document will understand the dataset you have been working with. 
+```
+
+
+
+
+
+## Exam questions
+
+### Part 1
+
+Let's try for the first assignment something straight forward:
+
+1) Which 2 filters would you need to get below mentioned table?
+
+```{r}
+
+gapminder %>% filter(country == "China", year == "2002")
+
+
+```
+
+
+
+2) After filter we learned about arrange for the Gapminder. If we want to complete this code to have the filter for 1957 and the dataset arranged descending for population. 
+
+```{r}
+# Filter for the year 1957, 
+#  then arrange in descending order of population
+
+gapminder %>%
+filter( year == "1957" ) %>%
+arrange(desc(pop))
+```
+
+
+3) finally we can combine this with a mutate, 
+In this exercise, you'll combine all three of the verbs you've learned in this chapter, to find the countries from high to low "life expectancy in months", for the year 2002. Complete the code below:
+
+```{r}
+# Filter for the year 2002
+# mutate the life expextency to represent months instead of years
+# and arrange the gapminder dataset with life expectancy in months from high to low
+
+gapminder %>%
+filter(year == "2002") %>%
+mutate(lifeExpMonths = 12 * lifeExp ) %>%
+arrange( desc(lifeExpMonths) )
+```
+
+
+Now that we have gained some heat in our coding we will pick up our pace. Firstly we want to look at the data in 1952, to filter for 1952 we use the following code:
+
+
+4) Complete this code to get this image.
+
+```{r}
+
+gapminder_1952 <- gapminder %>%
+  filter(year == "1952")
+
+ggplot(gapminder_1952, aes(x= pop , y= lifeExp , colour= continent )) +
+  geom_point(size = 2) +
+  scale_x_log10() +
+  ggtitle( '4 comparing life exp. against population 1952')
+
+```
+
+
+
+
+5) Complete the code to get this image
+
+```{r}
+
+gapminder_1952 <- gapminder %>%
+  filter( year == "1952" )
+
+ggplot(gapminder_1952, aes(x = pop, y = lifeExp , colour = continent , size = gdpPercap )) + 
+  geom_point() + 
+  scale_x_log10() + 
+  ggtitle( '5 comparing life exp. against population 1952')
+
+```
+
+
+
+
+6) Complete the code to get this image
+
+```{r}
+
+gapminder_1952 <- gapminder %>%
+  filter(year == "1952")
+
+ggplot(gapminder_1952, aes(x= pop , y= lifeExp )) + 
+  geom_point() + 
+  scale_x_log10() + 
+  facet_wrap(~ continent ) + 
+  ggtitle(  '6 comparing life exp. against population in different continents')
+
+```
+
+
+
+7) combining the techniques from question 6 and 5 we can now make an overview of Gapminder for all years to create the image below, what is the code for this? 
+
+```{r}
+
+
+ggplot(gapminder, aes(x= gdpPercap , y= lifeExp , colour= continent , size= pop )) + 
+  geom_point() + 
+  scale_x_log10() + 
+  facet_wrap(~  year ) + 
+  ggtitle( '7 Comparing GDP per capita against Life expectency over different years')
+
+```
+
+
+
+
+As you see, in the last assignments we have been working with the ggplot2 library, let's dive deeper into this library.
+
+### Part 2
+
+For this excercise we will look at the data set called Diamonds. 
+
+In this data set we have an overview of different diamonds on their size, price, colour, clarity, cut. In this excercise we will look only at the price, size and cut of the diamond. We want to know the relation between the weight and price for different cuts. 
+
+```{r}
+str(diamonds)
+head(diamonds)
+```
+
+
+
+
+
+8) To understand the data set, we make a scatterplot of the dataset Diamonds, with the carat on the X axis and the price on the Y axis, as seen in the graph below. 
+
+```{r}
+# - Make a scatter plot of the carat on the x axis and the price on the y axis. 
+ggplot(diamonds, aes(x = carat , y = price )) + geom_point()
+  
+```
+
+
+9) We now have a lot of black dots. One way to make this graph more useful is to add a smooth line through this. In the example we have added a smooth line. What is the code to do this? 
+
+```{r}
+# - Copy the above command but show only the smooth line
+ggplot(diamonds, aes(x = carat , y = price )) + geom_smooth()
+  
+```
+
+
+
+10) Unfortunately this does not give the right information yet. To add more information we use some colour in the next graph. What is the code to get this graph?
+
+```{r}
+# - Based on the previous graph, make the seperete lines for the different cuts. 
+ggplot(diamonds, aes(x = carat , y = price, colour = cut)) + geom_smooth()
+  
+```
+
+
+The last graph clearly shows the price for different diamond weights based on their cut. The scatter plot shows the build up of the smooth graphs. Especially the end of the graph is not so clear and can therefore be less predictive in its outcome. 
+If we would have reduced the data point to only 2 carat we would get a completely different graph. With the filter function we used earlier we can do this:
+
+11) Make the same graph, now only for the filtered version of only diamonds smaller than 2.0 carat. 
+
+```{r}
+# First we need to select the reduced data set of diamonds with a weight of only 2 carats.
+diamond_short <- diamonds %>%
+  filter( carat < 2.0 )
+
+ggplot( diamond_short , aes(x = carat, y = price, colour = cut)) + geom_smooth()
+  
+```
+
+
+
+### Part 3
+
+Lastly we have been working with data. To get this data from a process into your project we have the readr library. For this part, let us have a look at importing data and how to tidy the data. For the first set the code will be given, the second data set you will have to import yourself. 
+
+```{r}
+
+bakeoff <- read_csv("bakeoff.csv", skip = 0,
+                    na = c("", "NA", "UNKNOWN"))
+
+
+#If we want to see the loaded data set, we can use the following two options:
+#View(bakeoff)
+#str(bakeoff)
+
+view(bakeoff)
+```
+
+12) Within the CSV that we have downloaded, some of the entries for showstopper are considered non applicable (na). To find all the entries that are NA we can use the filter option. Complete the filter argument for the bakeoff data to show all na for showstopper. 
+
+```{r}
+# Filter rows where showstopper is NA 
+bakeoff %>%
+filter(is.na(showstopper))
+```
+
+
+
+13) with the function distinct() we can find all the unique entries for a certain column. Can you show the different values in the column of results by completing this code?
+
+```{r}
+# View distinct results
+bakeoff %>%
+distinct(result)
+```
+
+
+14) Not only knowing the distinct variable values in a column is useful, also knowing how often these appear. With which command can we find a <u>count</u> of all the values in the column result?
+
+```{r}
+# Count rows for each result
+  bakeoff %>%
+  count( result )
+
+```
+
+
+
+15) We want to find the number of episodes per season, to get this we need to do two steps:
+first we make an overview of the count of series and episodes. You can use the same command as we used in the previous assignment, though now for the series and episodes.
+
+```{r}
+bakeoff %>% 
+ count( series ,episode ) 
+
+```
+
+
+
+16) In question 15 you have made a new table. We will continue with this table in the next step. Count the number of episodes within each series. Complete the code below:
+
+```{r}
+
+bakeoff %>% 
+ count( series ,episode ) %>% count(series)
+
+```
+
+
+
+
+
+### BONUS 
+
+17) Now that we know how many episodes there are in a series, we will look at the viewers that tuned in with each episode. In order to do this we need to load a new data set. We have the messy_ratings.csv file. Load this file into your notebook by completing this code: 
+
+```{r}
+
+ratings <- read_csv("messy_ratings.csv",na = c("", "NA", "UNKNOWN"))
+
+# Gather viewer columns and remove NA rows that are in the data set, you can use this code without alterations. Note that we are still interested in the number of viewers per episode.
+tidy_ratings <- ratings %>%
+	gather(key = "episode", value ="viewers", -series, na.rm = TRUE)
+
+```
+
+
+
+18) We need to clean our data to a tidy table. A tidy table means that we create a long table with the seasons as the leading value. Complete the code:
+
+```{r}
+# Adapt code to parse episode as a number
+tidy_ratings <- ratings %>%
+    gather(  key = "episode", value = "viewers"  , - series  , na.rm = TRUE) %>%
+    mutate(episode = parse_number(episode))
+
+```
+
+
+
+19) We want to see only the number of viewers in episode 1 and in the last aired episode. For this you can complete the following code:
+
+```{r}
+# Fill in blanks to get first/last data
+tidy_ratings %>% 
+    group_by(series) %>% 
+    filter(episode == "1" | episode == max(episode)) %>% 
+    ungroup()
+```
+
+
+As we now have the first and last episode in one tidy table, the next step is to recode episode 1 as "first" and the last as "last". We use the following code:
+
+
+```{r}
+# Recode first/last episodes
+first_last <- tidy_ratings %>% group_by(series) %>% 
+    filter(episode == "1" | episode == max(episode)) %>% 
+    ungroup() %>%
+  mutate(episode = recode(episode, `1` = "first", .default = "last"))
+
+first_last
+```
+
+20) the next step is to make a scatter plot with the different points. To show the jump in viewers a line is drawn through the points for each season. 
+
+```{r}
+# Fill in to make slope chart
+ggplot(first_last, aes(x = episode, y =viewers, color = series)) + 
+  geom_point() + 
+  geom_line(aes(group = series))
+```
+
+```{r}
+# Let's reset the object for the first_last.
+first_last <- tidy_ratings %>% 
+  group_by(series) %>% 
+    filter(episode == "1" | episode == max(episode)) %>% 
+    ungroup() %>%
+  mutate(episode = recode(episode, `1` = "first", .default = "last")) 
+```
+
+21) The next step is to flip the coordinates (hint, add the command to flip the coord. to the next chunk). Complete the code to get the next graph.
+
+```{r}
+# Switch the variables mapping x-axis and color
+ggplot(first_last, aes(x = viewers, y = series, color = episode)) + 
+  geom_point() + 
+  geom_line(aes(group = series)) 
+  
+```
+
+
+
+22) As the last step we want to make the graph showing the increase of viewers in each series. This will give some insight in the popularity of the show during that series. 
+For the spread we are looking at the episodes and the viewers during that episode. We then want to know the increase in percentages, this increase needs to be calculated use the formula for percentage increase.
+
+```{r}
+# Calculate relative increase in viewers
+bump_by_series <- first_last %>% 
+  spread(episode, viewers) %>%    #?? 
+  mutate(bump = (viewers - episode) /series) #??
+
+
+ggplot(bump_by_series, aes(x = series, y = bump)) + 
+  geom_col() + 
+  scale_y_continuous(labels = scales::percent) # converts to %
+
+```
+
+
+
+
+## End of exam
+
+Make sure you submit the StudentNoteBook, the two .CSV files and the knitted HTML in the Exam_HandIn folder, before you submit your efit exam.
+
+This notebook is now complete. You can make this into a HTML by pressing the "knit" option at the top of your workfield, or select the dropdown by clicking "preview" and "knit to HTML". 
+Or the key combination: "shift + ctrl + k"
+When complete you add the 2 .CSV files, your notebook and the HTML to the submission folder. 
+
+If you could not finish all questions, or if you could not knit your notebook, you don't have to add an HTML to your submission. 
+
+The Bonus question is for the Good and Outstanding grades specifically. 
+
+###########################
+
+Week 6 exam NJ2019, Course Based, Data Design Orienting, Semester 1. 

@@ -1,0 +1,10 @@
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Nursing Bed Alarm\bin\Debug\Nursing Bed Alarm.exe.config
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Nursing Bed Alarm\bin\Debug\Nursing Bed Alarm.exe
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Nursing Bed Alarm\bin\Debug\Nursing Bed Alarm.pdb
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Nursing Bed Alarm\obj\Debug\Nursing Bed Alarm.csprojAssemblyReference.cache
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Nursing Bed Alarm\obj\Debug\Nursing_Bed_Alarm.Form1.resources
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Nursing Bed Alarm\obj\Debug\Nursing_Bed_Alarm.Properties.Resources.resources
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Nursing Bed Alarm\obj\Debug\Nursing Bed Alarm.csproj.GenerateResource.cache
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Nursing Bed Alarm\obj\Debug\Nursing Bed Alarm.exe
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Nursing Bed Alarm\obj\Debug\Nursing Bed Alarm.pdb
+C:\Users\Valio\Desktop\GIT\embedded systems\arduino projects\VS projects\Nursing Bed Alarm\obj\Debug\Nursing Bed Alarm.csproj.CoreCompileInputs.cache
