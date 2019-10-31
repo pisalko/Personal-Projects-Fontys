@@ -1,0 +1,39 @@
+
+// Driver program to test above function
+/*int main()
+{
+    int randMinimum = 0;
+    int randMaximum = 2;
+    int nrR = 11;
+    int nrC = 11;
+    //int random = rand();
+    std::random_device rd;     // only used once to initialise (seed) engine
+    std::mt19937 rng(rd());    // random-number engine used (Mersenne-Twister in this case)
+    std::uniform_int_distribution<int> uni(0, 1); // guaranteed unbiased
+    int rnmInt = uni(rng);
+
+    int array2D[11][11];
+
+	// populating 2D Array        
+	for (int row = 0; row<nrR; row++)
+	{
+		for (int column = 0; column<nrC; column++)
+		{
+			array2D[row][column] = rnmInt;
+			//array2D[row, column] = new int[];
+			//Console.Write(array2D[row, column]);
+		}
+
+		Point source = { 0, 0 };
+Point dest = { 3, 4 };
+
+int dist = BFS(array2D, source, dest);
+
+		if (dist != INT_MAX)
+			cout << "Shortest Path is " << dist;
+		else
+			cout << "Shortest Path doesn't exist";
+
+		return 0;
+
+	}*/

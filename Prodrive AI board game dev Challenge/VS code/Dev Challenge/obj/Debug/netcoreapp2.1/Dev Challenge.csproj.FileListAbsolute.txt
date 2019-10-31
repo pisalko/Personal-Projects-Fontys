@@ -1,0 +1,11 @@
+C:\Users\Valio\Desktop\Prodrive AI board game dev Challenge\VS code\Dev Challenge\bin\Debug\netcoreapp2.1\Dev Challenge.deps.json
+C:\Users\Valio\Desktop\Prodrive AI board game dev Challenge\VS code\Dev Challenge\bin\Debug\netcoreapp2.1\Dev Challenge.runtimeconfig.json
+C:\Users\Valio\Desktop\Prodrive AI board game dev Challenge\VS code\Dev Challenge\bin\Debug\netcoreapp2.1\Dev Challenge.runtimeconfig.dev.json
+C:\Users\Valio\Desktop\Prodrive AI board game dev Challenge\VS code\Dev Challenge\bin\Debug\netcoreapp2.1\Dev Challenge.dll
+C:\Users\Valio\Desktop\Prodrive AI board game dev Challenge\VS code\Dev Challenge\bin\Debug\netcoreapp2.1\Dev Challenge.pdb
+C:\Users\Valio\Desktop\Prodrive AI board game dev Challenge\VS code\Dev Challenge\obj\Debug\netcoreapp2.1\Dev Challenge.csprojAssemblyReference.cache
+C:\Users\Valio\Desktop\Prodrive AI board game dev Challenge\VS code\Dev Challenge\obj\Debug\netcoreapp2.1\Dev Challenge.csproj.CoreCompileInputs.cache
+C:\Users\Valio\Desktop\Prodrive AI board game dev Challenge\VS code\Dev Challenge\obj\Debug\netcoreapp2.1\Dev Challenge.AssemblyInfoInputs.cache
+C:\Users\Valio\Desktop\Prodrive AI board game dev Challenge\VS code\Dev Challenge\obj\Debug\netcoreapp2.1\Dev Challenge.AssemblyInfo.cs
+C:\Users\Valio\Desktop\Prodrive AI board game dev Challenge\VS code\Dev Challenge\obj\Debug\netcoreapp2.1\Dev Challenge.dll
+C:\Users\Valio\Desktop\Prodrive AI board game dev Challenge\VS code\Dev Challenge\obj\Debug\netcoreapp2.1\Dev Challenge.pdb

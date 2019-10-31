@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+</head>
+<body>
+<h1 id="prodrive-technologies-dev-challenge-2019">Prodrive Technologies Dev Challenge 2019</h1>
+<h2 id="rules">Rules</h2>
+<ul>
+<li>2 players</li>
+<li>play board (11 by 11 grid)</li>
+<li>turn based (3 seconds per turn)</li>
+</ul>
+<p>During its turn the player places one piece on an empty space in the grid. A player has 3 seconds to perform its turn. If the time limit is not met, the player automatically <em>loses</em> the game. Player 1 begins and the game ends when the grid is completely filled.</p>
+<p>The goal is to create the longest group of pieces that are horizontally or vertically connected. The length of a group is determined by the shortest route from the two points that are the furthest apart in the group, also called the graph diameter (http://mathworld.wolfram.com/GraphDiameter.html). For example in the grid below the longest group for <code>x</code> has a length of 6 and for <code>o</code> it has a length of 4. The results for <code>o</code> will be displayed like: 1-1-0-1 which means the player has 1 group of length one, 1 group of two, 0 of three and 1 of four.</p>
+<pre class="hljs"><code><div>x|o|o|x|o|o|
+x|x|x|x|o|o|
+x|x|x|o|x|o|
+</div></code></pre>
+<p>The player with the longest group wins the game. If the longest group of both players has the same length then the amount of these groups determines the winner, if this amount is also the same then the amount of groups with 1 shorter length etc. If all of these are the same then it is a draw. Since the starting player has the advantage of the first turn, player 2 receives a bonus group with the length of 1 shorter than its longest group.</p>
+<p>In the following example Player 1 places <code>+</code> signs and player 2 places <code>o</code> signs. The result of the game looks like this:</p>
+<ul>
+<li>Blue: 1 group of 17 long, 6 groups of 4 long, etc.</li>
+<li>Red: 1 group of 7 long, 2 groups 6 long (<em>BONUS</em>), 2 groups of 5 long, etc.</li>
+</ul>
+<p><img src="grid-example.png" alt="Example 11x11 grid" title="Example 11x11 grid"></p>
+<h2 id="scoring">Scoring</h2>
+<p>The scores for each game are awarded as follows:</p>
+<ul>
+<li>Win 2pt</li>
+<li>Draw 1pt</li>
+<li>Lose 0pt</li>
+</ul>
+<p>The winner of the tournament is the player with the highest score.</p>
+<h2 id="game-host">Game host</h2>
+<p>The game is hosted by an executable, the executable enforces the rules and ensures both player programs have the same amount of computer resources available.
+The following restrictions exist:</p>
+<ul>
+<li>The automated program is not allowed to start child processes.</li>
+<li>The automated program has a memory limit of 1GB.</li>
+<li>The automated program receives a CPU affinity such that it has access to 1 CPU core.</li>
+<li>Only the automated program whose turn it is can use the CPU. The other process is suspended.</li>
+<li>The automated program is only allowed to read files from its startup directory.</li>
+</ul>
+<p>A program can communicate with the game host by writing to STDOUT and reading from STDIN.</p>
+<ul>
+<li>At startup the player id (0 or 1) needs to be read from STDIN. (0 stands for player 1 and 1 for player 2)</li>
+<li>On even turns player 1 can read from STDIN and player 2 on uneven turns. STDIN will contain the x and y coordinate of the move the opposite player made, separated by a space.</li>
+<li>On uneven turns player 1 can write to STDOUT and player 2 on even turns. The format is x and y coordinate separated by a space.</li>
+</ul>
+<p>For example the fist two moves of a game can look like this:</p>
+<ul>
+<li>Player 1:
+<ul>
+<li>STDIN: 1</li>
+<li>STDOUT: 0 0</li>
+<li>STDIN: 0 1</li>
+</ul>
+</li>
+<li>Player 2:
+<ul>
+<li>STDIN: 2</li>
+<li>STDIN: 0 0</li>
+<li>STDOUT: 0 1</li>
+</ul>
+</li>
+</ul>
+<p>This results in a grid that looks like this:</p>
+<pre class="hljs"><code><div>1|2
+</div></code></pre>
+<p>The game host can be started with the following command: <code>gamehost.exe C:\path\to\payer1AI.exe &quot;&quot; C:\path\to\payer2AI.exe &quot;&quot;</code>. An optional <code>-s &lt;number&gt;</code> flag can be given to enable the sandbox, the number indicates the CPU affinity. Please ensure your AI works with the sandbox flag! Optional command line parameters can be given to each executable, or just empty quotes if you don't want to provide any. For example, if you want to execute a <code>.jar</code> file the command can look like: <code>gamehost.exe payer1AI.exe &quot;&quot; java.exe &quot;-jar player2AI.jar&quot;</code>.</p>
+<h2 id="hand-outs">Hand-outs</h2>
+<p>Each team will receive a USB drive containing the following:</p>
+<ul>
+<li>The source code and executable files of three example automated programs. <code>ExampleAI</code> is an C++ program, <code>ExampleAI-CS</code> is a C# program and <code>JavaExampleAI</code> is a Java program. These examples produce random moves and demonstrate communication with the game host.</li>
+<li>The game host executable which can be used for testing.</li>
+<li>A Java executable which is needed to run the Java example. <code>java.exe</code> should either be in the same folder as the game host or the exact path should be specified. This rule holds for any executable which is passed to the game host.</li>
+</ul>
+<h2 id="submission">Submission</h2>
+<p>All solutions must be submitted before the deadline. Any submissions after that, will <em>not</em> be considered.</p>
+<p>The source code of all solutions must be submitted, together with instructions on how to compile it. If you already have a compiled executable file, please include that as well. The supported compilers are: C++, C#, Python, Java. If you'd like to use a different language, please submit a compiled version of your program.</p>
+
+</body>
+</html>
