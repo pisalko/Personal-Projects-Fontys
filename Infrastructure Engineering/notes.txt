@@ -1,0 +1,6 @@
+Infrastructure Engineering - PDF > word etc.
+
+fps.lenght.(resolution.3.8) = bytes of video
+
+Read Time = seek time + 1/2 rotation time + C(time to read a segment but always ignored in calculation because time is too small) - hard disks
+

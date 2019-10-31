@@ -1,0 +1,18 @@
+export PATH=/home/vale/Desktop/Netkit/netkit/bin:$PATH
+
+
+export MANPATH=$MANPATH::/home/vale/Desktop/Netkit/netkit/man
+
+
+export NETKIT_HOME=/home/vale/Desktop/Netkit/netkit
+
+
+
+
+
+valeeeeeeeeeeeeeeee
+
+
+export NETKIT_HOME=/home/foo/netkit/home/vale/Desktop/Netkit
+export MANPATH=:$NETKIT_HOME/man
+export PATH=$NETKIT_HOME/bin:$PATH
