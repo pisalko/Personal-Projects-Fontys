@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnPOSTrequest = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.btnGETrequest = new System.Windows.Forms.Button();
@@ -44,15 +43,6 @@
             this.btnPOSTrequest.Text = "POST request to server";
             this.btnPOSTrequest.UseVisualStyleBackColor = true;
             this.btnPOSTrequest.Click += new System.EventHandler(this.BtnSendToServer_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(57, 451);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -74,11 +64,11 @@
             // 
             this.btnGETrequest.Location = new System.Drawing.Point(679, 422);
             this.btnGETrequest.Name = "btnGETrequest";
-            this.btnGETrequest.Size = new System.Drawing.Size(278, 52);
+            this.btnGETrequest.Size = new System.Drawing.Size(278, 49);
             this.btnGETrequest.TabIndex = 4;
-            this.btnGETrequest.Text = "GET request from server";
+            this.btnGETrequest.Text = "GET request to server";
             this.btnGETrequest.UseVisualStyleBackColor = true;
-            this.btnGETrequest.Click += new System.EventHandler(this.button1_Click);
+            this.btnGETrequest.Click += new System.EventHandler(this.btnGETrequest_Click);
             // 
             // Form1
             // 
@@ -88,7 +78,6 @@
             this.Controls.Add(this.btnGETrequest);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnPOSTrequest);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
@@ -102,7 +91,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnPOSTrequest;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btnGETrequest;

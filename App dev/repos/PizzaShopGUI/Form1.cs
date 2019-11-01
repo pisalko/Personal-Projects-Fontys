@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using System.Net;
+using System.IO;
 
 namespace SmallestFibonachiNumber
 {
@@ -28,7 +30,67 @@ namespace SmallestFibonachiNumber
 
         }
 
+        //POST request sending string to server
+        private void POSTrequest(string uri)
+        {
+            WebRequest request = WebRequest.Create(uri);
+            // Set the Method property of the request to POST.
+            request.Method = "POST";
+            // Create POST data and convert it to a byte array.
+            string postData = "Now it works";
+            /*string postData = textBox1.Text;
+            if (textBox1.Text == "")
+            {
+                postData = "The user did not input any text.";
+                textBox1.Text = null;
+            }
+            else
+            {
+                postData = textBox1.Text;
+                textBox1.Text = null;
+            }*/
 
+            byte[] buffer = Encoding.UTF8.GetBytes(postData);
+            // Set the ContentType property of the WebRequest.
+            request.ContentType = "Mario's Interface";
+            // Set the ContentLength property of the WebRequest. 
+            request.ContentLength = buffer.Length;
+            // Get the request stream.
+            Stream dataStream = request.GetRequestStream();
+            // Write the data to the request stream.
+            dataStream.Write(buffer, 0, buffer.Length);
+            // Close the Stream object.
+            dataStream.Close();
+            // Get the response.           
+            WebResponse response = request.GetResponse();
+            // Display the status.
+            Console.WriteLine(((HttpWebResponse)response).StatusDescription);
+            // Get the stream containing content returned by the server.
+            dataStream = response.GetResponseStream();
+            // Open the stream using a StreamReader for easy access.
+            StreamReader reader = new StreamReader(dataStream);
+            // Read the content.
+            string responseFromServer = reader.ReadToEnd();
+            // Display the content.
+            Console.WriteLine(responseFromServer);
+            // Clean up the streams.
+            reader.Close();
+            dataStream.Close();
+            response.Close();
+        }
+
+        //Get request returning string from server
+        public string GETrequest(string uri)
+        {
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+            request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            Stream stream = response.GetResponseStream();
+            StreamReader reader = new StreamReader(stream);
+
+            return reader.ReadToEnd();
+        }
 
         private void Button1_Click(object sender, EventArgs e)
         {
@@ -59,18 +121,10 @@ namespace SmallestFibonachiNumber
         {
 
         }
-    }
-    public class GradientPanel : Form1
-    {
-        public Color TopColor { get; set; }
-        public Color BottomColor { get; set; }
-        public float ANgle { get; set; }
-        protected override void OnPaint(PaintEventArgs e)
+
+        private void buttonReset_Click(object sender, EventArgs e)
         {
-            LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, this.TopColor, this.BottomColor, this.ANgle);
-            Graphics g = e.Graphics;
-            g.FillRectangle(brush, this.ClientRectangle);
-            base.OnPaint(e);
+            POSTrequest("http://145.93.61.233:42069");
         }
     }
 }

@@ -48,7 +48,6 @@ class S(BaseHTTPRequestHandler):
         self._set_headers()
         #self.wfile.write(b"<html><body><h1>POST!</h1></body></html>")
 
-
 def run(server_class=HTTPServer, handler_class=S, addr="145.93.61.233", port=42069):
     server_address = (addr, port)
     httpd = server_class(server_address, handler_class)
