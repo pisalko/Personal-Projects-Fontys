@@ -1,0 +1,10 @@
+C:\Users\Valio\source\repos\ForWhileDowhileLoops\bin\Debug\ForWhileDowhileLoops.exe.config
+C:\Users\Valio\source\repos\ForWhileDowhileLoops\bin\Debug\ForWhileDowhileLoops.exe
+C:\Users\Valio\source\repos\ForWhileDowhileLoops\bin\Debug\ForWhileDowhileLoops.pdb
+C:\Users\Valio\source\repos\ForWhileDowhileLoops\obj\Debug\ForWhileDowhileLoops.csprojAssemblyReference.cache
+C:\Users\Valio\source\repos\ForWhileDowhileLoops\obj\Debug\ForWhileDowhileLoops.Form1.resources
+C:\Users\Valio\source\repos\ForWhileDowhileLoops\obj\Debug\ForWhileDowhileLoops.Properties.Resources.resources
+C:\Users\Valio\source\repos\ForWhileDowhileLoops\obj\Debug\ForWhileDowhileLoops.csproj.GenerateResource.cache
+C:\Users\Valio\source\repos\ForWhileDowhileLoops\obj\Debug\ForWhileDowhileLoops.csproj.CoreCompileInputs.cache
+C:\Users\Valio\source\repos\ForWhileDowhileLoops\obj\Debug\ForWhileDowhileLoops.exe
+C:\Users\Valio\source\repos\ForWhileDowhileLoops\obj\Debug\ForWhileDowhileLoops.pdb

@@ -1,0 +1,10 @@
+C:\Users\Valio\source\repos\Functions and Reusability\bin\Debug\Functions and Reusability.exe.config
+C:\Users\Valio\source\repos\Functions and Reusability\bin\Debug\Functions and Reusability.exe
+C:\Users\Valio\source\repos\Functions and Reusability\bin\Debug\Functions and Reusability.pdb
+C:\Users\Valio\source\repos\Functions and Reusability\obj\Debug\Functions and Reusability.csprojAssemblyReference.cache
+C:\Users\Valio\source\repos\Functions and Reusability\obj\Debug\Functions_and_Reusability.Form1.resources
+C:\Users\Valio\source\repos\Functions and Reusability\obj\Debug\Functions_and_Reusability.Properties.Resources.resources
+C:\Users\Valio\source\repos\Functions and Reusability\obj\Debug\Functions and Reusability.csproj.GenerateResource.cache
+C:\Users\Valio\source\repos\Functions and Reusability\obj\Debug\Functions and Reusability.csproj.CoreCompileInputs.cache
+C:\Users\Valio\source\repos\Functions and Reusability\obj\Debug\Functions and Reusability.exe
+C:\Users\Valio\source\repos\Functions and Reusability\obj\Debug\Functions and Reusability.pdb

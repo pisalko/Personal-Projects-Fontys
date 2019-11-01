@@ -1,0 +1,10 @@
+C:\Users\Valio\source\repos\BMI CALC\bin\Debug\BMI CALC.exe.config
+C:\Users\Valio\source\repos\BMI CALC\bin\Debug\BMI CALC.exe
+C:\Users\Valio\source\repos\BMI CALC\bin\Debug\BMI CALC.pdb
+C:\Users\Valio\source\repos\BMI CALC\obj\Debug\BMI CALC.csprojAssemblyReference.cache
+C:\Users\Valio\source\repos\BMI CALC\obj\Debug\BMI_CALC.Form1.resources
+C:\Users\Valio\source\repos\BMI CALC\obj\Debug\BMI_CALC.Properties.Resources.resources
+C:\Users\Valio\source\repos\BMI CALC\obj\Debug\BMI CALC.csproj.GenerateResource.cache
+C:\Users\Valio\source\repos\BMI CALC\obj\Debug\BMI CALC.csproj.CoreCompileInputs.cache
+C:\Users\Valio\source\repos\BMI CALC\obj\Debug\BMI CALC.exe
+C:\Users\Valio\source\repos\BMI CALC\obj\Debug\BMI CALC.pdb

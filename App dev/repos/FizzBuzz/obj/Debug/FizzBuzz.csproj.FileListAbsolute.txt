@@ -1,0 +1,10 @@
+C:\Users\Valio\source\repos\FizzBuzz\bin\Debug\FizzBuzz.exe.config
+C:\Users\Valio\source\repos\FizzBuzz\bin\Debug\FizzBuzz.exe
+C:\Users\Valio\source\repos\FizzBuzz\bin\Debug\FizzBuzz.pdb
+C:\Users\Valio\source\repos\FizzBuzz\obj\Debug\FizzBuzz.csprojAssemblyReference.cache
+C:\Users\Valio\source\repos\FizzBuzz\obj\Debug\FizzBuzz.Form1.resources
+C:\Users\Valio\source\repos\FizzBuzz\obj\Debug\FizzBuzz.Properties.Resources.resources
+C:\Users\Valio\source\repos\FizzBuzz\obj\Debug\FizzBuzz.csproj.GenerateResource.cache
+C:\Users\Valio\source\repos\FizzBuzz\obj\Debug\FizzBuzz.csproj.CoreCompileInputs.cache
+C:\Users\Valio\source\repos\FizzBuzz\obj\Debug\FizzBuzz.exe
+C:\Users\Valio\source\repos\FizzBuzz\obj\Debug\FizzBuzz.pdb

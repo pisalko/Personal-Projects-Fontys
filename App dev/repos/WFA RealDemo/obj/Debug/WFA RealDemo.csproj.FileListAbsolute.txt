@@ -1,0 +1,10 @@
+C:\Users\Valio\source\repos\WFA RealDemo\bin\Debug\WFA RealDemo.exe.config
+C:\Users\Valio\source\repos\WFA RealDemo\bin\Debug\WFA RealDemo.exe
+C:\Users\Valio\source\repos\WFA RealDemo\bin\Debug\WFA RealDemo.pdb
+C:\Users\Valio\source\repos\WFA RealDemo\obj\Debug\WFA RealDemo.csprojAssemblyReference.cache
+C:\Users\Valio\source\repos\WFA RealDemo\obj\Debug\WFA_RealDemo.Form1.resources
+C:\Users\Valio\source\repos\WFA RealDemo\obj\Debug\WFA_RealDemo.Properties.Resources.resources
+C:\Users\Valio\source\repos\WFA RealDemo\obj\Debug\WFA RealDemo.csproj.GenerateResource.cache
+C:\Users\Valio\source\repos\WFA RealDemo\obj\Debug\WFA RealDemo.csproj.CoreCompileInputs.cache
+C:\Users\Valio\source\repos\WFA RealDemo\obj\Debug\WFA RealDemo.exe
+C:\Users\Valio\source\repos\WFA RealDemo\obj\Debug\WFA RealDemo.pdb

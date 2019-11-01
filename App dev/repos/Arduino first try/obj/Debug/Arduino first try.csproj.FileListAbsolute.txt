@@ -1,0 +1,10 @@
+C:\Users\Valio\source\repos\Arduino first try\bin\Debug\Arduino first try.exe.config
+C:\Users\Valio\source\repos\Arduino first try\bin\Debug\Arduino first try.exe
+C:\Users\Valio\source\repos\Arduino first try\bin\Debug\Arduino first try.pdb
+C:\Users\Valio\source\repos\Arduino first try\obj\Debug\Arduino first try.csprojAssemblyReference.cache
+C:\Users\Valio\source\repos\Arduino first try\obj\Debug\Arduino_first_try.Form1.resources
+C:\Users\Valio\source\repos\Arduino first try\obj\Debug\Arduino_first_try.Properties.Resources.resources
+C:\Users\Valio\source\repos\Arduino first try\obj\Debug\Arduino first try.csproj.GenerateResource.cache
+C:\Users\Valio\source\repos\Arduino first try\obj\Debug\Arduino first try.csproj.CoreCompileInputs.cache
+C:\Users\Valio\source\repos\Arduino first try\obj\Debug\Arduino first try.exe
+C:\Users\Valio\source\repos\Arduino first try\obj\Debug\Arduino first try.pdb

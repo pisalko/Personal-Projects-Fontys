@@ -1,0 +1,10 @@
+C:\Users\Valio\source\repos\If statements BEER\bin\Debug\If statements BEER.exe.config
+C:\Users\Valio\source\repos\If statements BEER\bin\Debug\If statements BEER.exe
+C:\Users\Valio\source\repos\If statements BEER\bin\Debug\If statements BEER.pdb
+C:\Users\Valio\source\repos\If statements BEER\obj\Debug\If statements BEER.csprojAssemblyReference.cache
+C:\Users\Valio\source\repos\If statements BEER\obj\Debug\If_statements_BEER.Form1.resources
+C:\Users\Valio\source\repos\If statements BEER\obj\Debug\If_statements_BEER.Properties.Resources.resources
+C:\Users\Valio\source\repos\If statements BEER\obj\Debug\If statements BEER.csproj.GenerateResource.cache
+C:\Users\Valio\source\repos\If statements BEER\obj\Debug\If statements BEER.csproj.CoreCompileInputs.cache
+C:\Users\Valio\source\repos\If statements BEER\obj\Debug\If statements BEER.exe
+C:\Users\Valio\source\repos\If statements BEER\obj\Debug\If statements BEER.pdb

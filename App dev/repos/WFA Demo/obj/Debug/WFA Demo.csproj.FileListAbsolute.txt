@@ -1,0 +1,15 @@
+C:\Users\Valio\source\repos\WFA Demo\bin\Debug\WFA Demo.exe.config
+C:\Users\Valio\source\repos\WFA Demo\bin\Debug\WFA Demo.exe
+C:\Users\Valio\source\repos\WFA Demo\bin\Debug\WFA Demo.pdb
+C:\Users\Valio\source\repos\WFA Demo\obj\Debug\WFA Demo.csprojAssemblyReference.cache
+C:\Users\Valio\source\repos\WFA Demo\obj\Debug\MainWindow.g.cs
+C:\Users\Valio\source\repos\WFA Demo\obj\Debug\App.g.cs
+C:\Users\Valio\source\repos\WFA Demo\obj\Debug\WFA Demo_MarkupCompile.cache
+C:\Users\Valio\source\repos\WFA Demo\obj\Debug\WFA Demo_MarkupCompile.lref
+C:\Users\Valio\source\repos\WFA Demo\obj\Debug\MainWindow.baml
+C:\Users\Valio\source\repos\WFA Demo\obj\Debug\WFA Demo.g.resources
+C:\Users\Valio\source\repos\WFA Demo\obj\Debug\WFA_Demo.Properties.Resources.resources
+C:\Users\Valio\source\repos\WFA Demo\obj\Debug\WFA Demo.csproj.GenerateResource.cache
+C:\Users\Valio\source\repos\WFA Demo\obj\Debug\WFA Demo.csproj.CoreCompileInputs.cache
+C:\Users\Valio\source\repos\WFA Demo\obj\Debug\WFA Demo.exe
+C:\Users\Valio\source\repos\WFA Demo\obj\Debug\WFA Demo.pdb

@@ -1,0 +1,10 @@
+C:\Users\Valio\source\repos\For First Exercise\bin\Debug\For First Exercise.exe.config
+C:\Users\Valio\source\repos\For First Exercise\bin\Debug\For First Exercise.exe
+C:\Users\Valio\source\repos\For First Exercise\bin\Debug\For First Exercise.pdb
+C:\Users\Valio\source\repos\For First Exercise\obj\Debug\For First Exercise.csprojAssemblyReference.cache
+C:\Users\Valio\source\repos\For First Exercise\obj\Debug\For_First_Exercise.Form1.resources
+C:\Users\Valio\source\repos\For First Exercise\obj\Debug\For_First_Exercise.Properties.Resources.resources
+C:\Users\Valio\source\repos\For First Exercise\obj\Debug\For First Exercise.csproj.GenerateResource.cache
+C:\Users\Valio\source\repos\For First Exercise\obj\Debug\For First Exercise.csproj.CoreCompileInputs.cache
+C:\Users\Valio\source\repos\For First Exercise\obj\Debug\For First Exercise.exe
+C:\Users\Valio\source\repos\For First Exercise\obj\Debug\For First Exercise.pdb

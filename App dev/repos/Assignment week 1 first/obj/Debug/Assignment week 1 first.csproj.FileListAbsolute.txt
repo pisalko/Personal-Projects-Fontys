@@ -1,0 +1,10 @@
+C:\Users\Valio\source\repos\Assignment week 1 first\bin\Debug\Assignment week 1 first.exe.config
+C:\Users\Valio\source\repos\Assignment week 1 first\bin\Debug\Assignment week 1 first.exe
+C:\Users\Valio\source\repos\Assignment week 1 first\bin\Debug\Assignment week 1 first.pdb
+C:\Users\Valio\source\repos\Assignment week 1 first\obj\Debug\Assignment week 1 first.csprojAssemblyReference.cache
+C:\Users\Valio\source\repos\Assignment week 1 first\obj\Debug\Assignment_week_1_first.Form1.resources
+C:\Users\Valio\source\repos\Assignment week 1 first\obj\Debug\Assignment_week_1_first.Properties.Resources.resources
+C:\Users\Valio\source\repos\Assignment week 1 first\obj\Debug\Assignment week 1 first.csproj.GenerateResource.cache
+C:\Users\Valio\source\repos\Assignment week 1 first\obj\Debug\Assignment week 1 first.csproj.CoreCompileInputs.cache
+C:\Users\Valio\source\repos\Assignment week 1 first\obj\Debug\Assignment week 1 first.exe
+C:\Users\Valio\source\repos\Assignment week 1 first\obj\Debug\Assignment week 1 first.pdb

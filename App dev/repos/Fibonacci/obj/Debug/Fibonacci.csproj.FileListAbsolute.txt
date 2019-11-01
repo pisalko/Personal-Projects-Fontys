@@ -1,0 +1,10 @@
+C:\Users\Valio\source\repos\Fibonacci\bin\Debug\Fibonacci.exe.config
+C:\Users\Valio\source\repos\Fibonacci\bin\Debug\Fibonacci.exe
+C:\Users\Valio\source\repos\Fibonacci\bin\Debug\Fibonacci.pdb
+C:\Users\Valio\source\repos\Fibonacci\obj\Debug\Fibonacci.csprojAssemblyReference.cache
+C:\Users\Valio\source\repos\Fibonacci\obj\Debug\Fibonacci.Form1.resources
+C:\Users\Valio\source\repos\Fibonacci\obj\Debug\Fibonacci.Properties.Resources.resources
+C:\Users\Valio\source\repos\Fibonacci\obj\Debug\Fibonacci.csproj.GenerateResource.cache
+C:\Users\Valio\source\repos\Fibonacci\obj\Debug\Fibonacci.csproj.CoreCompileInputs.cache
+C:\Users\Valio\source\repos\Fibonacci\obj\Debug\Fibonacci.exe
+C:\Users\Valio\source\repos\Fibonacci\obj\Debug\Fibonacci.pdb

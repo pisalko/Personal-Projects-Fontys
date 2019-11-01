@@ -1,0 +1,10 @@
+C:\Users\Valio\source\repos\Week 2 IF statements (DEMO)\bin\Debug\Week 2 IF statements (DEMO).exe.config
+C:\Users\Valio\source\repos\Week 2 IF statements (DEMO)\bin\Debug\Week 2 IF statements (DEMO).exe
+C:\Users\Valio\source\repos\Week 2 IF statements (DEMO)\bin\Debug\Week 2 IF statements (DEMO).pdb
+C:\Users\Valio\source\repos\Week 2 IF statements (DEMO)\obj\Debug\Week 2 IF statements (DEMO).csprojAssemblyReference.cache
+C:\Users\Valio\source\repos\Week 2 IF statements (DEMO)\obj\Debug\Week_2_IF_statements__DEMO_.Form1.resources
+C:\Users\Valio\source\repos\Week 2 IF statements (DEMO)\obj\Debug\Week_2_IF_statements__DEMO_.Properties.Resources.resources
+C:\Users\Valio\source\repos\Week 2 IF statements (DEMO)\obj\Debug\Week 2 IF statements (DEMO).csproj.GenerateResource.cache
+C:\Users\Valio\source\repos\Week 2 IF statements (DEMO)\obj\Debug\Week 2 IF statements (DEMO).csproj.CoreCompileInputs.cache
+C:\Users\Valio\source\repos\Week 2 IF statements (DEMO)\obj\Debug\Week 2 IF statements (DEMO).exe
+C:\Users\Valio\source\repos\Week 2 IF statements (DEMO)\obj\Debug\Week 2 IF statements (DEMO).pdb

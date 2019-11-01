@@ -1,0 +1,9 @@
+C:\Users\Valio\source\repos\PA Toggle Colors Extended\bin\Debug\PA Toggle Colors Extended.exe.config
+C:\Users\Valio\source\repos\PA Toggle Colors Extended\bin\Debug\PA Toggle Colors Extended.exe
+C:\Users\Valio\source\repos\PA Toggle Colors Extended\bin\Debug\PA Toggle Colors Extended.pdb
+C:\Users\Valio\source\repos\PA Toggle Colors Extended\obj\Debug\PA_Toggle_Colors_Extended.Form1.resources
+C:\Users\Valio\source\repos\PA Toggle Colors Extended\obj\Debug\PA_Toggle_Colors_Extended.Properties.Resources.resources
+C:\Users\Valio\source\repos\PA Toggle Colors Extended\obj\Debug\PA Toggle Colors Extended.csproj.GenerateResource.cache
+C:\Users\Valio\source\repos\PA Toggle Colors Extended\obj\Debug\PA Toggle Colors Extended.csproj.CoreCompileInputs.cache
+C:\Users\Valio\source\repos\PA Toggle Colors Extended\obj\Debug\PA Toggle Colors Extended.exe
+C:\Users\Valio\source\repos\PA Toggle Colors Extended\obj\Debug\PA Toggle Colors Extended.pdb

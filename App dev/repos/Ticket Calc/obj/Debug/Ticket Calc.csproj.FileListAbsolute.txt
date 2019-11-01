@@ -1,0 +1,10 @@
+C:\Users\Valio\source\repos\Ticket Calc\bin\Debug\Ticket Calc.exe.config
+C:\Users\Valio\source\repos\Ticket Calc\bin\Debug\Ticket Calc.exe
+C:\Users\Valio\source\repos\Ticket Calc\bin\Debug\Ticket Calc.pdb
+C:\Users\Valio\source\repos\Ticket Calc\obj\Debug\Ticket Calc.csprojAssemblyReference.cache
+C:\Users\Valio\source\repos\Ticket Calc\obj\Debug\Ticket_Calc.Form1.resources
+C:\Users\Valio\source\repos\Ticket Calc\obj\Debug\Ticket_Calc.Properties.Resources.resources
+C:\Users\Valio\source\repos\Ticket Calc\obj\Debug\Ticket Calc.csproj.GenerateResource.cache
+C:\Users\Valio\source\repos\Ticket Calc\obj\Debug\Ticket Calc.csproj.CoreCompileInputs.cache
+C:\Users\Valio\source\repos\Ticket Calc\obj\Debug\Ticket Calc.exe
+C:\Users\Valio\source\repos\Ticket Calc\obj\Debug\Ticket Calc.pdb

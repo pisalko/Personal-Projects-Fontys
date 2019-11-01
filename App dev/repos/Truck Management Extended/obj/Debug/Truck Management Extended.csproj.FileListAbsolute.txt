@@ -1,0 +1,10 @@
+C:\Users\Valio\source\repos\Truck Management Extended\bin\Debug\Truck Management Extended.exe.config
+C:\Users\Valio\source\repos\Truck Management Extended\bin\Debug\Truck Management Extended.exe
+C:\Users\Valio\source\repos\Truck Management Extended\bin\Debug\Truck Management Extended.pdb
+C:\Users\Valio\source\repos\Truck Management Extended\obj\Debug\Truck Management Extended.csprojAssemblyReference.cache
+C:\Users\Valio\source\repos\Truck Management Extended\obj\Debug\Truck_Management_Extended.Form1.resources
+C:\Users\Valio\source\repos\Truck Management Extended\obj\Debug\Truck_Management_Extended.Properties.Resources.resources
+C:\Users\Valio\source\repos\Truck Management Extended\obj\Debug\Truck Management Extended.csproj.GenerateResource.cache
+C:\Users\Valio\source\repos\Truck Management Extended\obj\Debug\Truck Management Extended.csproj.CoreCompileInputs.cache
+C:\Users\Valio\source\repos\Truck Management Extended\obj\Debug\Truck Management Extended.exe
+C:\Users\Valio\source\repos\Truck Management Extended\obj\Debug\Truck Management Extended.pdb
