@@ -1,0 +1,9 @@
+1. SELECT LastName, FirstName FROM STUDENTS
+2. SELECT * FROM COURSES
+3. SELECT * FROM STUDENTS ORDER BY FirstName, LastName
+
+1.SELECT Grade, StudentNumber, Course FROM GRADES WHERE Grade > 7 
+2.SELECT Course, StudentNumber, FROM GRADES Grade WHERE Course = 'EDB1'
+3.SELECT Course, StudentNumber, Grade AS 'Edb1Grades' FROM GRADES WHERE Course = 'EDB1' AND Grade IS NOT NULL F
+
+1.SELECT SUM(ExtendedPrice) AS ExtendedPriceSUM, AVG(ExtendedPrice) AS ExtendedPriceAVG, MIN(ExtendedPrice) AS ExtendedPriceMIN, MAX(ExtendedPrice) AS ExtendedPriceMAX FROM Order_item
