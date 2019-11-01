@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSendToServer = new System.Windows.Forms.Button();
+            this.btnPOSTrequest = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnGETrequest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnSendToServer
+            // btnPOSTrequest
             // 
-            this.btnSendToServer.Location = new System.Drawing.Point(93, 238);
-            this.btnSendToServer.Name = "btnSendToServer";
-            this.btnSendToServer.Size = new System.Drawing.Size(365, 46);
-            this.btnSendToServer.TabIndex = 0;
-            this.btnSendToServer.Text = "Send To Server";
-            this.btnSendToServer.UseVisualStyleBackColor = true;
-            this.btnSendToServer.Click += new System.EventHandler(this.BtnSendToServer_Click);
+            this.btnPOSTrequest.Location = new System.Drawing.Point(12, 237);
+            this.btnPOSTrequest.Name = "btnPOSTrequest";
+            this.btnPOSTrequest.Size = new System.Drawing.Size(365, 46);
+            this.btnPOSTrequest.TabIndex = 0;
+            this.btnPOSTrequest.Text = "POST request to server";
+            this.btnPOSTrequest.UseVisualStyleBackColor = true;
+            this.btnPOSTrequest.Click += new System.EventHandler(this.BtnSendToServer_Click);
             // 
             // button2
             // 
@@ -55,7 +56,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(93, 200);
+            this.textBox1.Location = new System.Drawing.Point(12, 199);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(365, 22);
             this.textBox1.TabIndex = 2;
@@ -69,16 +70,27 @@
             this.listBox1.Size = new System.Drawing.Size(278, 324);
             this.listBox1.TabIndex = 3;
             // 
+            // btnGETrequest
+            // 
+            this.btnGETrequest.Location = new System.Drawing.Point(679, 422);
+            this.btnGETrequest.Name = "btnGETrequest";
+            this.btnGETrequest.Size = new System.Drawing.Size(278, 52);
+            this.btnGETrequest.TabIndex = 4;
+            this.btnGETrequest.Text = "GET request from server";
+            this.btnGETrequest.UseVisualStyleBackColor = true;
+            this.btnGETrequest.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.btnGETrequest);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnSendToServer);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Controls.Add(this.btnPOSTrequest);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -89,10 +101,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnSendToServer;
+        private System.Windows.Forms.Button btnPOSTrequest;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnGETrequest;
     }
 }
 

@@ -25,20 +25,7 @@ namespace Java_server_attempt_1
 
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-            
-            /*using (var wb = new WebClient())
-            {
-                var data = new NameValueCollection();                         //Method B
-                data["Vlado shte mi lapa li ?"] = "true";
-                data["Vlado gei li e ?"] = "true";
-
-                var response = wb.UploadValues("http://localhost:42069", "POST", data);
-                string responseInString = Encoding.UTF8.GetString(response);
-            }*/
-
-
-            // Create a request using a URL that can receive a post. 
+        { 
 
         }
 
@@ -47,7 +34,7 @@ namespace Java_server_attempt_1
         private void BtnSendToServer_Click(object sender, EventArgs e)
         {
 
-            WebRequest request = WebRequest.Create("http://145.93.62.204:8080");
+            WebRequest request = WebRequest.Create("http://10.28.109.112:42069");
             // Set the Method property of the request to POST.
             request.Method = "POST";
             // Create POST data and convert it to a byte array.
@@ -63,7 +50,7 @@ namespace Java_server_attempt_1
                 textBox1.Text = null;
             }
 
-            byte[] buffer = Encoding.ASCII.GetBytes(postData);
+            byte[] buffer = Encoding.UTF8.GetBytes(postData);
             // Set the ContentType property of the WebRequest.
             request.ContentType = "Mario's Interface";
             // Set the ContentLength property of the WebRequest. 
@@ -113,6 +100,24 @@ namespace Java_server_attempt_1
                 response.Close();
             
             
+        }
+
+        public string Get(string uri)
+        {
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+            request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+
+            using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+            using (Stream stream = response.GetResponseStream())
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                return reader.ReadToEnd();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add(Get("http://10.28.109.112:42069"));
         }
     }
 }
