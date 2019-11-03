@@ -39,6 +39,7 @@ void setup()
   
   debounceTimer = millis();
   display.clear();
+  display.setBrightness(7);
 }
 
 float get_temperature()  // copy-paste from richshield example
@@ -97,6 +98,7 @@ void loop()
   //-----------------------------------------------------------
   if (key1Click && !key1State)      //Making KEY1 Click do something
   {
+    digitalWrite(LED2G, HIGH);
     modeCounter++;
     switch (modeCounter) {
       case 1:
@@ -116,17 +118,19 @@ void loop()
   if (key2Click && !key2State)      //Making KEY2 Click do something
   {
     Serial.println("a");
+    Serial.flush();
   }
+  
   if (Serial.available() > 0)            //Actual code
   {
     textRead = Serial.readString();
     textRead.trim();
     switch (modeCounter) {
       case 1:
-        if(textRead.startsWith("t:"))
+        if(textRead[0] = 't')
         {
-          textRead = textRead.substring(2);
-          hourWithDot = textRead.toInt();
+          String formattedHour = textRead.substring(2);
+          hourWithDot = formattedHour.toInt();
           
           display.showNumberDecEx(hourWithDot, 0b01000000);
           digitalWrite(LED1R, HIGH);
@@ -134,8 +138,8 @@ void loop()
           
             if(textRead.startsWith("t:"))
         {
-          textRead = textRead.substring(2, textRead.length());
-          Serial.println("s" + hourWithDot);
+          textRead = textRead.substring(1);
+          Serial.println("s" + String(hourWithDot));
 
         }
         

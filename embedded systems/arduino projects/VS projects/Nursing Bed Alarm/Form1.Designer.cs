@@ -80,7 +80,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(492, 95);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(228, 292);
             this.listBox1.TabIndex = 3;
@@ -88,7 +88,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(192, 43);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(97, 90);
             this.pictureBox1.TabIndex = 4;
@@ -97,7 +97,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(192, 160);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 5;
@@ -108,7 +108,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 499;
+            this.timer1.Interval = 3000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
