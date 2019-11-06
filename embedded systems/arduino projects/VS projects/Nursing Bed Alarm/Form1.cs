@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Nursing_Bed_Alarm
@@ -61,18 +54,20 @@ namespace Nursing_Bed_Alarm
             textInPort.Trim();
             textInPort = textInPort.Replace("\r\n", "").Replace("\r", "").Replace("\n", "");
 
-            if (textInPort.StartsWith("s"))
+            /*if (textInPort.StartsWith("s"))
             {
                 MessageBox.Show(textInPort.Substring(1, textInPort.Length - 1));
-            }
+            }*/
 
             switch (textInPort)
             {
                 case "a":
-                pictureBox1.BackColor = Color.Red;
-
-                alarmSounded = true;
+                    alarmSounded = true;
                     break;
+                default:
+                    alarmSounded = false;
+                    break;
+                    
 
                 case "1":
                     modeCheck = '1';
@@ -97,6 +92,11 @@ namespace Nursing_Bed_Alarm
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             serialPort1.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

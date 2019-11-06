@@ -1,0 +1,17 @@
+<html>
+
+<head>
+	<title>My First Web Page</title>
+</head>
+
+<body>
+	<h1>My First Web Page</h1>
+	<p><b>Hello World Wide Web!</p></p
+	<p><b>Hello World Wide Web!</p></p>
+	<p><b>Hello World Wide Web!</p></p>
+	<p>This is my first web page.</p>
+	<p>HTML tags can give<b><i>variuos</i></b>
+	<h2>This is a subHeading</h2>
+	<p>More Text</p>
+</body>	
+</html>

@@ -1,0 +1,19 @@
+C:\Users\874259\source\repos\chatApp\chatApp\bin\Debug\chatApp.exe.config
+C:\Users\874259\source\repos\chatApp\chatApp\bin\Debug\chatApp.exe
+C:\Users\874259\source\repos\chatApp\chatApp\bin\Debug\chatApp.pdb
+C:\Users\874259\source\repos\chatApp\chatApp\obj\Debug\chatApp.csprojAssemblyReference.cache
+C:\Users\874259\source\repos\chatApp\chatApp\obj\Debug\chatApp.Form1.resources
+C:\Users\874259\source\repos\chatApp\chatApp\obj\Debug\chatApp.Properties.Resources.resources
+C:\Users\874259\source\repos\chatApp\chatApp\obj\Debug\chatApp.csproj.GenerateResource.cache
+C:\Users\874259\source\repos\chatApp\chatApp\obj\Debug\chatApp.csproj.CoreCompileInputs.cache
+C:\Users\874259\source\repos\chatApp\chatApp\obj\Debug\chatApp.exe
+C:\Users\874259\source\repos\chatApp\chatApp\obj\Debug\chatApp.pdb
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\bin\Debug\chatApp.exe.config
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\bin\Debug\chatApp.exe
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\bin\Debug\chatApp.pdb
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\obj\Debug\chatApp.csprojAssemblyReference.cache
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\obj\Debug\chatApp.Form1.resources
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\obj\Debug\chatApp.Properties.Resources.resources
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\obj\Debug\chatApp.csproj.GenerateResource.cache
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\obj\Debug\chatApp.exe
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\obj\Debug\chatApp.pdb

@@ -1,0 +1,8 @@
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\bin\Release\chatApp.exe.config
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\bin\Release\chatApp.exe
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\bin\Release\chatApp.pdb
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\obj\Release\chatApp.Form1.resources
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\obj\Release\chatApp.Properties.Resources.resources
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\obj\Release\chatApp.csproj.GenerateResource.cache
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\obj\Release\chatApp.exe
+C:\Users\Valio\Desktop\chatApp test\chatApp (1)\chatApp\chatApp\obj\Release\chatApp.pdb

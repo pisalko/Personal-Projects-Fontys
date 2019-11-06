@@ -36,7 +36,7 @@ void setup()
   pinMode(LED4Y, OUTPUT);
   pinMode(KEY1, INPUT_PULLUP);
   pinMode(KEY2, INPUT_PULLUP);
-  
+
   debounceTimer = millis();
   display.clear();
   display.setBrightness(7);
@@ -44,13 +44,13 @@ void setup()
 
 float get_temperature()  // copy-paste from richshield example
 {
-    float temperature,resistance;
-    int value;
-    value = analogRead(NTC);
-    resistance   = (float)value * NTC_R25/(1024 - value); // Calculate resistance
-    /* Calculate the temperature according to the following formula. */
-    temperature  = 1/(log(resistance/NTC_R25)/NTC_MATERIAL_CONSTANT+1/298.15)-273.15;
-    return temperature;
+  float temperature, resistance;
+  int value;
+  value = analogRead(NTC);
+  resistance   = (float)value * NTC_R25 / (1024 - value); // Calculate resistance
+  /* Calculate the temperature according to the following formula. */
+  temperature  = 1 / (log(resistance / NTC_R25) / NTC_MATERIAL_CONSTANT + 1 / 298.15) - 273.15;
+  return temperature;
 }
 
 void DisplayShow(int first, int second, int third, int fourth)      //Method used for the Display (because its easier that way and simpler, i have to write this code only once and then call it whenever i need it)
@@ -117,43 +117,42 @@ void loop()
   //--------------------------------------------------------------
   if (key2Click && !key2State)      //Making KEY2 Click do something
   {
-    Serial.println("a");
+    Serial.println('a');
     Serial.flush();
   }
-  
+
   if (Serial.available() > 0)            //Actual code
   {
     textRead = Serial.readString();
     textRead.trim();
-    switch (modeCounter) {
-      case 1:
-        if(textRead[0] = 't')
-        {
-          String formattedHour = textRead.substring(2);
-          hourWithDot = formattedHour.toInt();
-          
-          display.showNumberDecEx(hourWithDot, 0b01000000);
-          digitalWrite(LED1R, HIGH);
+  }
+  switch (modeCounter) {
+    case 1:
+      if (textRead[0] = 't')
+      {
+        String formattedHour = textRead.substring(2);
+        hourWithDot = formattedHour.toInt();
 
-          
-            if(textRead.startsWith("t:"))
+        display.showNumberDecEx(hourWithDot, 0b01000000);
+        digitalWrite(LED1R, HIGH);
+
+
+        if (textRead.startsWith("t:"))
         {
           textRead = textRead.substring(1);
           Serial.println("s" + String(hourWithDot));
 
         }
-        
-        }
-        break;
+      }
+      break;
 
-      case 2:
+    case 2:
+      display.showNumberDecEx(get_temperature(), 0b01000000);
+      break;
 
-        break;
-
-      case 3:
-
-        break;
-    }
+    case 3:
+      display.clear();
+      break;
   }
 
 }
