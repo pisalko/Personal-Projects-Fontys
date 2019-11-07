@@ -19,7 +19,6 @@ namespace Nursing_Bed_Alarm
             DateTime dt = DateTime.Now;
             serialPort1.Open();
             timeOnly = dt.ToString("HHmm");
-
         }
         bool once = true;
         private void timer1_Tick(object sender, EventArgs e)

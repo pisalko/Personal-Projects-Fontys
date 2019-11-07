@@ -132,26 +132,25 @@ void loop()
       {
         String formattedHour = textRead.substring(2);
         hourWithDot = formattedHour.toInt();
+        display.showNumberDecEx(hourWithDot, 0b01000000, true);
 
-        display.showNumberDecEx(hourWithDot, 0b01000000);
-        digitalWrite(LED1R, HIGH);
+        /* if (textRead.startsWith("t:"))
+          {
+           textRead = textRead.substring(1);
+           Serial.println("s" + String(hourWithDot));
 
-
-        if (textRead.startsWith("t:"))
-        {
-          textRead = textRead.substring(1);
-          Serial.println("s" + String(hourWithDot));
-
-        }
+          }*/
       }
       break;
 
     case 2:
-      display.showNumberDecEx(get_temperature(), 0b01000000);
+      int intTemp = get_temperature() * 100;
+      display.showNumberDecEx(intTemp, 0b01000000);
       break;
 
     case 3:
-      display.clear();
+      int degreesChair = map(NTC, 1023, 0, 30, 0);
+      display.showNumberDecEx(degreesChair * 10, true);
       break;
   }
 
