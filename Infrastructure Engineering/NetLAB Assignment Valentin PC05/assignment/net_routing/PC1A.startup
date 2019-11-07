@@ -1,0 +1,4 @@
+ifconfig eth0 up
+/etc/init.d/networking start
+
+ifconfig eth0 10.7.1.1 netmask 255.255.0.0
