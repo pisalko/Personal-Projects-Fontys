@@ -8,3 +8,12 @@ C:\Users\Valio\source\repos\Who am I\obj\Debug\Who am I.csproj.CoreCompileInputs
 C:\Users\Valio\source\repos\Who am I\obj\Debug\Who am I.exe
 C:\Users\Valio\source\repos\Who am I\obj\Debug\Who am I.pdb
 C:\Users\Valio\source\repos\Who am I\obj\Debug\Who am I.csprojAssemblyReference.cache
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\Who am I\bin\Debug\Who am I.exe.config
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\Who am I\bin\Debug\Who am I.exe
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\Who am I\bin\Debug\Who am I.pdb
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\Who am I\obj\Debug\Who am I.csprojAssemblyReference.cache
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\Who am I\obj\Debug\Who_am_I.Form1.resources
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\Who am I\obj\Debug\Who_am_I.Properties.Resources.resources
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\Who am I\obj\Debug\Who am I.csproj.GenerateResource.cache
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\Who am I\obj\Debug\Who am I.exe
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\Who am I\obj\Debug\Who am I.pdb

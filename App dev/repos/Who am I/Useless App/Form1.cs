@@ -76,5 +76,10 @@ namespace Who_am_I
             ir = rnd.Next(0, 2);
             this.BackgroundImage = imageList1.Images[ir];
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -17,3 +17,4 @@ C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\embedded systems\arduino 
 C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\embedded systems\arduino projects\VS projects\Nursing Bed Alarm\obj\Debug\Nursing Bed Alarm.csproj.GenerateResource.cache
 C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\embedded systems\arduino projects\VS projects\Nursing Bed Alarm\obj\Debug\Nursing Bed Alarm.exe
 C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\embedded systems\arduino projects\VS projects\Nursing Bed Alarm\obj\Debug\Nursing Bed Alarm.pdb
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\embedded systems\arduino projects\VS projects\Nursing Bed Alarm\bin\Debug\Properties\crop.jpg

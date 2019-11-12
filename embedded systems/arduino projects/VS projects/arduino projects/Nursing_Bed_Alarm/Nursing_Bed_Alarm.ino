@@ -15,7 +15,7 @@ const int NTC_R25 = 10000; // the resistance of the NTC at 25'C is 10k ohm copy-
 const int NTC_MATERIAL_CONSTANT = 3950; // value provided by manufacturer copy-paste from example
 
 
-unsigned long long debounceTimer, sendTempTimer = 0;
+unsigned long long debounceTimer, sendTempTimer, sendDegrTimer = 0;
 
 bool key1State, key1OldState, key1Click, key2State, key2OldState, key2Click = true;
 
@@ -40,7 +40,8 @@ void setup()
   debounceTimer = millis();
   display.clear();
   display.setBrightness(7);
-  sendTempTimer = millis();
+  sendTempTimer, sendDegrTimer = millis();
+  
 }
 
 float get_temperature()  // copy-paste from richshield example
@@ -114,6 +115,7 @@ void loop()
   //--------------------------------------------------------------
   if (key2Click && !key2State)      //Making KEY2 Click do something
   {
+    Serial.flush();
     Serial.println('a');
     digitalWrite(LED1R, HIGH);
   }
@@ -146,7 +148,7 @@ void loop()
         int intTemp = get_temperature() * 100;
         display.showNumberDecEx(intTemp, 0b01000000);
 
-        if ((millis() - sendTempTimer > 3000))
+        if ((millis() - sendTempTimer > 2000))
         {
           Serial.flush();
           Serial.println("z" + String(intTemp));
@@ -159,7 +161,13 @@ void loop()
       {
         int degreesChair = map(analogRead(POT), 0, 1023, 0, 30);
         display.showNumberDec(degreesChair);
-
+        
+        if ((millis() - sendDegrTimer > 1000))
+        {
+          Serial.flush();
+          Serial.println("d" + String(degreesChair));
+          sendDegrTimer = millis();
+        }
       }
       break;
   }

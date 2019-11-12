@@ -14,7 +14,7 @@ namespace Nursing_Bed_Alarm
         String textInPort = "";
         bool alarmSounded;
         string timeOnly;
-        int temperature;
+        int temperature, degreesChair;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -42,17 +42,18 @@ namespace Nursing_Bed_Alarm
                     serialPort1.WriteLine("t:" + timeOnly);
                     
                 }
-                label2.Text = "Switch to mode 2 for room temperature.";
+                label2.Text = "";
             }
             else if (modeCheck == '2')
             {
                 label2.Visible = true;
                 double temperatureFl = Convert.ToDouble(temperature) / 100;
-                    label2.Text = "Room temperature is: " + temperatureFl.ToString() + " degrees Celsius";
+                    label2.Text = "Room temperature is: " + temperatureFl.ToString() + " degrees Celsius.";
             }
             else if (modeCheck == '3')
             {
-                label2.Text = "Switch to mode 2 for room temperature.";
+
+                label2.Text = "Patients chair is tilted at " + degreesChair.ToString() + " degrees.";
             }
 
             if (modeCheck != '1')
@@ -60,6 +61,7 @@ namespace Nursing_Bed_Alarm
 
             if(alarmSounded)
             {
+                this.BackgroundImage = Image.FromFile("crop.jpg");
                 pictureBox1.BackColor = Color.Red;
             }
             
@@ -103,12 +105,18 @@ namespace Nursing_Bed_Alarm
                 {
                     temperature = Convert.ToInt32(textInPort.Substring(1));
                 }
+
+                if (textInPort.StartsWith("d"))
+                {
+                    degreesChair = Convert.ToInt32(textInPort.Substring(1));
+                }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             serialPort1.WriteLine("r");
             pictureBox1.BackColor = Color.Transparent;
+            this.BackgroundImage = null;
             alarmSounded = false;
         }
 
