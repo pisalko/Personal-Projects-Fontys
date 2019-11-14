@@ -24,6 +24,9 @@ TM1637Display display(DISPLAYCLK, DISPLAYDIO);
 int modeCounter = 0;
 String textRead;
 int hourWithDot;
+int degreesChairOldMapped;
+int degreesChairMapped;
+int degreesChair;
 
 void setup()
 {
@@ -41,7 +44,7 @@ void setup()
   display.clear();
   display.setBrightness(7);
   sendTempTimer, sendDegrTimer = millis();
-  
+
 }
 
 float get_temperature()  // copy-paste from richshield example
@@ -53,6 +56,22 @@ float get_temperature()  // copy-paste from richshield example
   /* Calculate the temperature according to the following formula. */
   temperature  = 1 / (log(resistance / NTC_R25) / NTC_MATERIAL_CONSTANT + 1 / 298.15) - 273.15;
   return temperature;
+}
+
+
+
+void CheckForMode3()
+{
+  degreesChairOldMapped = map(degreesChair, 10, 1010, 0, 30);
+  delay(100);
+  degreesChairMapped = map(analogRead(POT), 10, 1010, 0, 30);
+
+  if (degreesChairOldMapped != degreesChairMapped)
+  {
+    degreesChairOldMapped = degreesChairMapped;
+    Serial.println("3");
+    modeCounter = 3;
+  }
 }
 
 void loop()
@@ -130,7 +149,10 @@ void loop()
     }
   }
   //--------------------------------------------------------------
+  
+degreesChair = analogRead(POT);
 
+  
   switch (modeCounter)                  //Depending on mode, we do smth
   {
     case 1:
@@ -139,6 +161,13 @@ void loop()
         String formattedHour = textRead.substring(2);
         hourWithDot = formattedHour.toInt();
         display.showNumberDecEx(hourWithDot, 0b01000000, true);
+        CheckForMode3();
+        /*int degreesChairOld = degreesChair;
+          if(degreesChairOld != analogRead(POT))
+          {
+          Serial.println("3");
+          modeCounter = 3;
+          }*/
       }
 
       break;
@@ -154,22 +183,32 @@ void loop()
           Serial.println("z" + String(intTemp));
           sendTempTimer = millis();
         }
+        CheckForMode3();
+        /*int degreesChairOld = degreesChair;
+          degreesChair = analogRead(POT);
+
+          if(degreesChairOld != degreesChair)
+          {
+          Serial.println("3");
+          modeCounter = 3;
+          }*/
       }
       break;
 
     case 3:
       {
-        int degreesChair = map(analogRead(POT), 0, 1023, 0, 30);
-        display.showNumberDec(degreesChair);
-        
+        int degreesChairMapped = map(degreesChair, 0, 1010, 0, 30);
+        display.showNumberDec(degreesChairMapped);
         if ((millis() - sendDegrTimer > 1000))
         {
           Serial.flush();
-          Serial.println("d" + String(degreesChair));
+          Serial.println("d" + String(degreesChairMapped));
           sendDegrTimer = millis();
         }
       }
       break;
   }
+
+
 
 }
