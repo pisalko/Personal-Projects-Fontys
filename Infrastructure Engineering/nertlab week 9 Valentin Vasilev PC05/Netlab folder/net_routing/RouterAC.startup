@@ -1,0 +1,7 @@
+/etc/init.d/networking start
+
+ifconfig eth0 10.7.1.0 netmask 255.255.0.0
+ifconfig eth1 192.168.7.4 netmask 255.255.255.0
+
+
+route add default gw 192.168.7.3
