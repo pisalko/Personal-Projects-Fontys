@@ -1,0 +1,47 @@
+C:\Users\Rymga\source\repos\Trakteren\Trakteren\bin\Debug\Trakteren.exe.config
+C:\Users\Rymga\source\repos\Trakteren\Trakteren\bin\Debug\Trakteren.exe
+C:\Users\Rymga\source\repos\Trakteren\Trakteren\bin\Debug\Trakteren.pdb
+C:\Users\Rymga\source\repos\Trakteren\Trakteren\obj\Debug\Trakteren.csprojAssemblyReference.cache
+C:\Users\Rymga\source\repos\Trakteren\Trakteren\obj\Debug\Trakteren.Form1.resources
+C:\Users\Rymga\source\repos\Trakteren\Trakteren\obj\Debug\Trakteren.Properties.Resources.resources
+C:\Users\Rymga\source\repos\Trakteren\Trakteren\obj\Debug\Trakteren.csproj.GenerateResource.cache
+C:\Users\Rymga\source\repos\Trakteren\Trakteren\obj\Debug\Trakteren.csproj.CoreCompileInputs.cache
+C:\Users\Rymga\source\repos\Trakteren\Trakteren\obj\Debug\Trakteren.exe
+C:\Users\Rymga\source\repos\Trakteren\Trakteren\obj\Debug\Trakteren.pdb
+C:\Users\Valio\Desktop\ado group assignment\ado-group-assignment\Trakteren\Trakteren\bin\Debug\Trakteren.exe.config
+C:\Users\Valio\Desktop\ado group assignment\ado-group-assignment\Trakteren\Trakteren\bin\Debug\Trakteren.exe
+C:\Users\Valio\Desktop\ado group assignment\ado-group-assignment\Trakteren\Trakteren\bin\Debug\Trakteren.pdb
+C:\Users\Valio\Desktop\ado group assignment\ado-group-assignment\Trakteren\Trakteren\obj\Debug\Trakteren.csprojAssemblyReference.cache
+C:\Users\Valio\Desktop\ado group assignment\ado-group-assignment\Trakteren\Trakteren\obj\Debug\Trakteren.Form1.resources
+C:\Users\Valio\Desktop\ado group assignment\ado-group-assignment\Trakteren\Trakteren\obj\Debug\Trakteren.Properties.Resources.resources
+C:\Users\Valio\Desktop\ado group assignment\ado-group-assignment\Trakteren\Trakteren\obj\Debug\Trakteren.csproj.GenerateResource.cache
+C:\Users\Valio\Desktop\ado group assignment\ado-group-assignment\Trakteren\Trakteren\obj\Debug\Trakteren.exe
+C:\Users\Valio\Desktop\ado group assignment\ado-group-assignment\Trakteren\Trakteren\obj\Debug\Trakteren.pdb
+C:\Users\ivona\Git-IP-project\ado-group-assignment\Trakteren\Trakteren\bin\Debug\Trakteren.exe.config
+C:\Users\ivona\Git-IP-project\ado-group-assignment\Trakteren\Trakteren\bin\Debug\Trakteren.exe
+C:\Users\ivona\Git-IP-project\ado-group-assignment\Trakteren\Trakteren\bin\Debug\Trakteren.pdb
+C:\Users\ivona\Git-IP-project\ado-group-assignment\Trakteren\Trakteren\obj\Debug\Trakteren.csprojAssemblyReference.cache
+C:\Users\ivona\Git-IP-project\ado-group-assignment\Trakteren\Trakteren\obj\Debug\Trakteren.Form1.resources
+C:\Users\ivona\Git-IP-project\ado-group-assignment\Trakteren\Trakteren\obj\Debug\Trakteren.Properties.Resources.resources
+C:\Users\ivona\Git-IP-project\ado-group-assignment\Trakteren\Trakteren\obj\Debug\Trakteren.csproj.GenerateResource.cache
+C:\Users\ivona\Git-IP-project\ado-group-assignment\Trakteren\Trakteren\obj\Debug\Trakteren.exe
+C:\Users\ivona\Git-IP-project\ado-group-assignment\Trakteren\Trakteren\obj\Debug\Trakteren.pdb
+C:\Users\Rymga\Desktop\1semester\AD\ADO git\Trakteren\Trakteren\Trakteren\bin\Debug\Trakteren.exe.config
+C:\Users\Rymga\Desktop\1semester\AD\ADO git\Trakteren\Trakteren\Trakteren\bin\Debug\Trakteren.exe
+C:\Users\Rymga\Desktop\1semester\AD\ADO git\Trakteren\Trakteren\Trakteren\bin\Debug\Trakteren.pdb
+C:\Users\Rymga\Desktop\1semester\AD\ADO git\Trakteren\Trakteren\Trakteren\obj\Debug\Trakteren.csprojAssemblyReference.cache
+C:\Users\Rymga\Desktop\1semester\AD\ADO git\Trakteren\Trakteren\Trakteren\obj\Debug\Trakteren.Form1.resources
+C:\Users\Rymga\Desktop\1semester\AD\ADO git\Trakteren\Trakteren\Trakteren\obj\Debug\Trakteren.Properties.Resources.resources
+C:\Users\Rymga\Desktop\1semester\AD\ADO git\Trakteren\Trakteren\Trakteren\obj\Debug\Trakteren.csproj.GenerateResource.cache
+C:\Users\Rymga\Desktop\1semester\AD\ADO git\Trakteren\Trakteren\Trakteren\obj\Debug\Trakteren.csproj.CoreCompileInputs.cache
+C:\Users\Rymga\Desktop\1semester\AD\ADO git\Trakteren\Trakteren\Trakteren\obj\Debug\Trakteren.exe
+C:\Users\Rymga\Desktop\1semester\AD\ADO git\Trakteren\Trakteren\Trakteren\obj\Debug\Trakteren.pdb
+C:\Users\Valio\Desktop\New folder\Trakteren\Trakteren\bin\Debug\Trakteren.exe.config
+C:\Users\Valio\Desktop\New folder\Trakteren\Trakteren\bin\Debug\Trakteren.exe
+C:\Users\Valio\Desktop\New folder\Trakteren\Trakteren\bin\Debug\Trakteren.pdb
+C:\Users\Valio\Desktop\New folder\Trakteren\Trakteren\obj\Debug\Trakteren.csprojAssemblyReference.cache
+C:\Users\Valio\Desktop\New folder\Trakteren\Trakteren\obj\Debug\Trakteren.Form1.resources
+C:\Users\Valio\Desktop\New folder\Trakteren\Trakteren\obj\Debug\Trakteren.Properties.Resources.resources
+C:\Users\Valio\Desktop\New folder\Trakteren\Trakteren\obj\Debug\Trakteren.csproj.GenerateResource.cache
+C:\Users\Valio\Desktop\New folder\Trakteren\Trakteren\obj\Debug\Trakteren.exe
+C:\Users\Valio\Desktop\New folder\Trakteren\Trakteren\obj\Debug\Trakteren.pdb
