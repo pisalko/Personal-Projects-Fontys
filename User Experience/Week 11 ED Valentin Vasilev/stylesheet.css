@@ -171,6 +171,19 @@ body{
     margin-top: 250px;
 }
 
+.PortfolioText{
+	position: absolute;
+	color: #fff;
+	font-family: Metro;
+    margin-right: auto;
+	text-align: center;
+	font-size: 16pt;
+	width: 42%;
+	display:inline-block;
+	margin-top:20%;
+	margin-left: 42%;
+}
+
 .file-button{
 	color: #fff;
 	border: 2px solid #5216ab;
