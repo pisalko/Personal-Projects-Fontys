@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'Metro';
+  src: url('Metro.otf') format('truetype');
+}
+
+@font-face{
+	font-family: 'Serao';
+	src: url('serao.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Becker';
+  src: url('BECKER.ttf') format('truetype');
+} 
+
+body{
+  background-image: url(papyrus-dark.png);
+  background-repeat:repeat;
+}
+
+.title{
+	color: white;
+	font-family: Becker;
+	float: right;
+	font-size: 65pt;
+	letter-spacing: 5px;
+	
+	background: linear-gradient(227deg, #c90000, #361cab);
+	background-position:center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+	background-size: 400% 400%;
+	user-select: none;
+
+	-webkit-animation: AnimationName 8s ease infinite;
+	-moz-animation: AnimationName 8s ease infinite;
+	-o-animation: AnimationName 8s ease infinite;
+	animation: AnimationName 8s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:79% 0%}
+    50%{background-position:22% 100%}
+    100%{background-position:79% 0%}
+}
+
+@-moz-keyframes AnimationName {
+    0%{background-position:79% 0%}
+    50%{background-position:22% 100%}
+    100%{background-position:79% 0%}
+}
+
+@-o-keyframes AnimationName {
+    0%{background-position:79% 0%}
+    50%{background-position:22% 100%}
+    100%{background-position:79% 0%}
+}
+
+@keyframes AnimationName {
+    0%{background-position:79% 0%}
+    50%{background-position:22% 100%}
+    100%{background-position:79% 0%}
+}
+
+.content{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 25%;
+	height: 100%;
+}
+
+.names {
+	color: #5216ab;
+	border: 3px solid white;
+	display: inline-block;
+	transition: 0.2s ease-in-out;
+	font-family: Serao;
+	padding: 15px;
+	text-align: center;
+	width: 100%;
+	background: rgba(11,0,11,0.5);
+	cursor: pointer;
+	border-radius: 0 15px 15px 0;
+	margin-left: -25px;
+	
+}
+
+.names:hover{
+	color: white;
+	border: 2px solid #5216ab;
+	margin-left: -5px;
+}
+
+.names:hover + .subtext{
+	visibility: visible;
+	border-color: #5216ab;
+}
+
+.subtext{
+	color: white;
+	font-family: Serao;
+	font-size: 15pt;
+	visibility: hidden;
+	padding: 10px;
+	margin-top: -25px;
+	border-color: white;
+	border-left: 2px dashed;
+	border-bottom: 2px dashed;
+	transition: border-color 0.2s ease-in-out;
+	text-align: center;
+	width: 80%;
+}
+
+.navbar table{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.footer{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-family: Metro;
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+	color: #fff;
+	border-top: 3px solid #5216ab;
+	border-left: 3px solid #5216ab;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 0px;
+}
+
+.footer:hover{
+	color: #5216ab;
+	border-top: 3px solid #fff;
+	border-left: 3px solid #fff;
+}
+
+.button-back{
+	font-family: Metro;
+	color: white;
+	border: 3px solid white;
+	display: inline-block;
+	margin-left: -50px;
+	margin-top: 0px;
+	padding: 10px 10px 10px 50px;
+	border-radius: 0 15px 15px 0;
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+	color: #5216ab;
+	background: rgba(0,0,0,0.7);
+}
+
+.button-back:hover{
+	transform: translate(30px);
+	color: #fff;
+	border-color: #5216ab;
+}
+
+.text{
+	color: #fff;
+	font-family: Metro;
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+	font-size: 16pt;
+	width: 800px;
+    margin-top: 250px;
+}
+
+.file-button{
+	color: #fff;
+	border: 2px solid #5216ab;
+	border-radius: 15px;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+	width: 20%;
+	font-family: Metro;
+	padding: 8px;
+	cursor: pointer;
+	background: rgba(11, 0, 11, 0.7);
+}
+
+a{
+	text-decoration: none;
+}
