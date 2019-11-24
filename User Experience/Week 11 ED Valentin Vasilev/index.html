@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html>
+<!-- Home Page -->
 	<head>
+	<!-- In the header we put meta information like which css file to use -->
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="stylesheet.css">
-		
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">		
 	</head>
 
-	<body>
-	
+	<body>	
+	<!-- Here I create tables which I use as buttons -->
 		<table class="content">
-		
-			<tr class = "namesOnLeft">				
+		<!-- This code is for my 4 buttons on the left changing between the pages / Button 1 -->
+			<tr>				
 				<td>									
 					<h1 onclick = "document.location = '2AIsExample.html'" class = "names">
-						Week 1<!-- - 2 AI Examples-->
+						Week 1
 					</h1>	
 					<h1 class="subtext">2 AI Examples</h1>					
 				</td>					
 			</tr>
-			
+			<!-- Button 2 -->
 			<tr>				
 				<td>									
 					<h1 onclick = "document.location = '2Good2Bad.html'" class = "names">
-						Week 2<!-- - 2 Good and 2 Bad Examples of Good UI-->
+						Week 2
 					</h1>	
 					<h1 class="subtext">2 Good and 2 Bad Examples of Good UI</h1>			
 				</td>					
 			</tr>
-			
+			<!-- Button 3 -->
 			<tr>				
 				<td>									
 					<h1 onclick = "document.location = 'SurveyUserStudy.html'" class = "names">
-						Week 3, 4, 5<!-- - Survey and User Study-->
+						Week 3, 4, 5
 					</h1>	
 					<h1 class="subtext">Survey and User study</h1>			
 				</td>					
 			</tr>
-			
+			<!-- Button 4 -->
 			<tr>				
 				<td>									
 					<h1 onclick = "document.location = 'WebsiteWireframe.html'" class = "names">
-						Week 7, 8<!-- - Functional Website Wireframe -->
+						Week 7, 8
 					</h1>	
 					<h1 class="subtext">Functional Website Wireframe</h1>		
 				</td>					
 			</tr>
+			<!-- Closing the table object -->
 		</table>
 		
-		<h1 class="title">Portfolio</h1>
+		<!-- Title of home page -->
+		<h1 class="title">
+		Portfolio
+		</h1>
 		
+		<!-- Description of home page -->
 		<h1 class="PortfolioText">
 			My name is Valentin Vasilev and this is my Portfolio Website.<br><br>On the left you can navigate troughout my assignments and on the bottom right corner you can find my contacts.
 		</h1>
-
+		
+		<!-- Footer used for Contact button with redirection implemented -->
 		<div class="footer" onclick="document.location='contact.html'">
 			<h1>Contact</h1>
 		</div>
