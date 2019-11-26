@@ -1,16 +1,17 @@
+#include <Display.h>
+
 const int KEY2 = 9;
 const int KEY1 = 8;
-//const int POT = A0;
-//const int NTC = A1;
 const int LED1R = 4;
 const int LED2G = 5;
 const int LED3B = 6;
 const int LED4Y = 7;
-//const int BUZZER = 3;
-//const int DISPLAYCLK = 10;
-//const int DISPLAYDIO = 11;
-//const int NTC_R25 = 10000; // the resistance of the NTC at 25'C is 10k ohm copy-paste from example
-//const int NTC_MATERIAL_CONSTANT = 3950; // value provided by manufacturer copy-paste from example
+const int BUZZER = 3;
+const int DISPLAYCLK = 10;
+const int DISPLAYDIO = 11;
+
+
+int numberAtPos[4][10]; // see if needed
 
 
 unsigned long long debounceTimer = 0;
@@ -20,17 +21,20 @@ String textRead = "";
 void setup()
 {
   Serial.begin(9600);
-  //pinMode(NTC, INPUT);
   pinMode(LED1R, OUTPUT);
   pinMode(LED2G, OUTPUT);
   pinMode(LED3B, OUTPUT);
   pinMode(LED4Y, OUTPUT);
   pinMode(KEY1, INPUT_PULLUP);
   pinMode(KEY2, INPUT_PULLUP);
-  //pinMode(POT, INPUT);
+  pinMode(BUZZER, OUTPUT);
   debounceTimer = millis();
-  //display.clear();
-  //display.setBrightness(7);
+  Display.clear();
+  //Displays "PLAY" on display in the beggining
+  Display.showDigitAt(0, 0b01110011);
+  Display.showDigitAt(1, 0b00111000);
+  Display.showCharAt(2, 'A');
+  Display.showCharAt(3, 'Y');
 }
 
 void loop()
@@ -66,16 +70,6 @@ void loop()
   else
   {
     key2Click = false;
-  }
-  //------------------------------------------------------------
-  if (Serial.available() > 0)            //Reading Serial
-  {
-    textRead = Serial.readString();
-    textRead.trim();
-    if (textRead == "r")
-    {
-      digitalWrite(LED1R, LOW);
-    }
   }
   //------------------------------------------------------------
   if (key1Click && !key1State) //Executing code once when pressed Key1

@@ -8,3 +8,12 @@ C:\Users\Valio\source\repos\SimpleCalc\bin\Debug\SimpleCalc.exe
 C:\Users\Valio\source\repos\SimpleCalc\bin\Debug\SimpleCalc.pdb
 C:\Users\Valio\source\repos\SimpleCalc\obj\Debug\SimpleCalc.exe
 C:\Users\Valio\source\repos\SimpleCalc\obj\Debug\SimpleCalc.pdb
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\SimpleCalc\bin\Debug\SimpleCalc.exe.config
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\SimpleCalc\bin\Debug\SimpleCalc.exe
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\SimpleCalc\bin\Debug\SimpleCalc.pdb
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\SimpleCalc\obj\Debug\SimpleCalc.csprojAssemblyReference.cache
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\SimpleCalc\obj\Debug\SimpleCalc.Form1.resources
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\SimpleCalc\obj\Debug\SimpleCalc.Properties.Resources.resources
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\SimpleCalc\obj\Debug\SimpleCalc.csproj.GenerateResource.cache
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\SimpleCalc\obj\Debug\SimpleCalc.exe
+C:\Users\Valio\Desktop\GITHUB\Personal-Projects-Fontys\App dev\repos\SimpleCalc\obj\Debug\SimpleCalc.pdb

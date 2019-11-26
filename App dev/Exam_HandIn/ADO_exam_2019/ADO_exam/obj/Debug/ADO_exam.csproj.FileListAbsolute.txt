@@ -1,0 +1,9 @@
+C:\Users\Valio\Desktop\Exam_HandIn\ADO_exam_2019\ADO_exam\bin\Debug\ADO_exam.exe.config
+C:\Users\Valio\Desktop\Exam_HandIn\ADO_exam_2019\ADO_exam\bin\Debug\ADO_exam.exe
+C:\Users\Valio\Desktop\Exam_HandIn\ADO_exam_2019\ADO_exam\bin\Debug\ADO_exam.pdb
+C:\Users\Valio\Desktop\Exam_HandIn\ADO_exam_2019\ADO_exam\obj\Debug\ADO_exam.csprojAssemblyReference.cache
+C:\Users\Valio\Desktop\Exam_HandIn\ADO_exam_2019\ADO_exam\obj\Debug\ADO_exam.Form1.resources
+C:\Users\Valio\Desktop\Exam_HandIn\ADO_exam_2019\ADO_exam\obj\Debug\ADO_exam.Properties.Resources.resources
+C:\Users\Valio\Desktop\Exam_HandIn\ADO_exam_2019\ADO_exam\obj\Debug\ADO_exam.csproj.GenerateResource.cache
+C:\Users\Valio\Desktop\Exam_HandIn\ADO_exam_2019\ADO_exam\obj\Debug\ADO_exam.exe
+C:\Users\Valio\Desktop\Exam_HandIn\ADO_exam_2019\ADO_exam\obj\Debug\ADO_exam.pdb
