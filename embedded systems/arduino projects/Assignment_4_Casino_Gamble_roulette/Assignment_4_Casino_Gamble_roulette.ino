@@ -38,7 +38,7 @@ void MillisAsDelay(int interval)
   timeNow = millis();
   while (millis() < timeNow + interval)
   {
-
+    
   }
 }
 
@@ -48,10 +48,10 @@ int RealRandomNumber()
   ldrValue = analogRead(LDR);
   potValue = map(analogRead(POT), 0, 1023, 4, 321);
 
- int valueDivided = ntcValue + ldrValue;
+  int valueDivided = ntcValue + ldrValue;
 
- int randomNumber = valueDivided / potValue;
- return randomNumber; 
+  int randomNumber = valueDivided / potValue;
+  return randomNumber;
 }
 
 void WinningSound() // Obsolete, can be implemented in another gamemode I have an idea of (not enough time)
@@ -180,7 +180,7 @@ void FlashingLedsInASequence(int ledOn)
 }
 
 void setup()
-{  
+{
   Serial.begin(9600);
   RealRandomNumber();
   pinMode(LED1R, OUTPUT);
@@ -280,7 +280,7 @@ void loop()
       mode = 1;
       Display.clear();
       int startingPos;
-      for(int j = 0; j < RealRandomNumber(); j++)
+      for (int j = 0; j < RealRandomNumber(); j++)
       {
         startingPos = random(0, 11);             //This is the most random scneario I could think of with the hardware at hand
       }
@@ -319,7 +319,7 @@ void loop()
 
       //take NTC/LDR value read and for loop as many tiems as ldr/ntc ??
       int rounds; //We can never have completely random number here but thats the best we can do.
-      for(int j = 0; j < RealRandomNumber(); j++)
+      for (int j = 0; j < RealRandomNumber(); j++)
       {
         rounds = random(51, 63);
       }
@@ -422,7 +422,7 @@ void loop()
 
         lastRoundSeg = last;
         Serial.println("You won !");
-        
+
         //Do fancy stuff with leds and buzzer and Display
         //Flashing leds
         for (int h = 2; h <= 9; h++)
@@ -440,44 +440,51 @@ void loop()
         }
 
         //Display yeah
-        for (int i = 0; i < 4; i++)
+        for (int g = 0; g < 3; g++)
         {
-          MillisAsDelay(300);
-          Display.clear();
-          int first = i;
-          int second = i + 1;
-          int third = i + 2;
-          int fourth = i + 3;
-          if (second > 3)
-            second = i - 3;
-          if (third > 3)
-            third = i - 2;
-          if (fourth > 3)
-            fourth = i - 1;
-
-
-          Display.showCharAt(first, 'Y');
-          Display.showCharAt(second, 'E');
-          Display.showCharAt(third, 'A');
-          Display.showCharAt(fourth, 'H');
-          MillisAsDelay(300);
-
-          //Winning sound buzzer
-          if (i == 0)
+          for (int i = 0; i < 4; i++)
           {
-            for (int loopV = 0; loopV < 3; loopV++)
-            {
-              WinningSound2();
-            }
-          }
+            MillisAsDelay(300);
+            Display.clear();
+            int first = i;
+            int second = i + 1;
+            int third = i + 2;
+            int fourth = i + 3;
+            if (second > 3)
+              second = i - 3;
+            if (third > 3)
+              third = i - 2;
+            if (fourth > 3)
+              fourth = i - 1;
 
-          if (i == 3)
-          {
-            Display.showCharAt(0, 'Y');
-            Display.showCharAt(1, 'E');
-            Display.showCharAt(2, 'A');
-            Display.showCharAt(3, 'H');
+
+            Display.showCharAt(first, 'Y');
+            Display.showCharAt(second, 'E');
+            Display.showCharAt(third, 'A');
+            Display.showCharAt(fourth, 'H');
             FlashingLedsInASequence(2);
+            MillisAsDelay(300);
+
+            //Winning sound buzzer
+            if (i == 0 && g == 0)
+            {
+              for (int loopV = 0; loopV < 3; loopV++)
+              {
+                WinningSound2();
+              }
+            }
+
+            if (i == 3)
+            {
+              MillisAsDelay(150);
+              Display.clear();
+              Display.showCharAt(0, 'Y');
+              Display.showCharAt(1, 'E');
+              Display.showCharAt(2, 'A');
+              Display.showCharAt(3, 'H');
+              FlashingLedsInASequence(2);
+              MillisAsDelay(300);
+            }
           }
         }
 
@@ -502,41 +509,48 @@ void loop()
         }
         //--------------------------------
         //Display LOSS
-        for (int i = 0; i < 4; i++)
+        for (int g = 0; g < 3; g++)
         {
-          MillisAsDelay(300);
-          Display.clear();
-          int first = i;
-          int second = i + 1;
-          int third = i + 2;
-          int fourth = i + 3;
-          if (second > 3)
-            second = i - 3;
-          if (third > 3)
-            third = i - 2;
-          if (fourth > 3)
-            fourth = i - 1;
-
-
-          Display.showDigitAt(first, 0b00111000);
-          Display.showCharAt(second, 'O');
-          Display.showCharAt(third, 'S');
-          Display.showCharAt(fourth, 'S');
-          MillisAsDelay(300);
-
-          //Winning sound buzzer ----------------------
-          if (i == 0)
+          for (int i = 0; i < 4; i++)
           {
-            LoosingSound();
-          }
+            MillisAsDelay(300);
+            Display.clear();
+            int first = i;
+            int second = i + 1;
+            int third = i + 2;
+            int fourth = i + 3;
+            if (second > 3)
+              second = i - 3;
+            if (third > 3)
+              third = i - 2;
+            if (fourth > 3)
+              fourth = i - 1;
 
-          if (i == 3)
-          {
-            Display.showDigitAt(0, 0b00111000);
-            Display.showCharAt(1, 'O');
-            Display.showCharAt(2, 'S');
-            Display.showCharAt(3, 'S');
+
+            Display.showDigitAt(first, 0b00111000); //L
+            Display.showCharAt(second, 'O');
+            Display.showCharAt(third, 'S');
+            Display.showCharAt(fourth, 'S');
             FlashingLedsInASequence(3);
+            MillisAsDelay(300);
+
+            //Winning sound buzzer ----------------------
+            if (i == 0 && g == 0)
+            {
+              LoosingSound();
+            }
+
+            if (i == 3)
+            {
+              MillisAsDelay(150);
+              Display.clear();
+              Display.showDigitAt(0, 0b00111000);
+              Display.showCharAt(1, 'O');
+              Display.showCharAt(2, 'S');
+              Display.showCharAt(3, 'S');
+              FlashingLedsInASequence(3);
+              MillisAsDelay(300);
+            }
           }
         }
         //-----------------

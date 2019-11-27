@@ -1,0 +1,85 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(DBI)
+library(knitr)
+
+# connect to Game
+con <- DBI::dbConnect(RSQLite::SQLite(), "Game.db")
+
+# use the database connection for all SQL chunks in this notebook and hide the code by default
+knitr::opts_chunk$set(connection = "con", echo=FALSE)
+The overview of the tables we have used can be seen in this database model:
+
+<img src = "images/Game.png" />
+
+The content of each dataset is listed below:
+SELECT *
+FROM Order_List;
+SELECT *
+FROM Address;
+SELECT *
+FROM Orders;
+SELECT *
+FROM Parts;
+SELECT *
+FROM Available;
+Given the Dataset from the business game can you:
+1. Get the address corresponding to the order number 103.
+SELECT DISTINCT a.City, a.Street
+FROM Address a
+INNER JOIN Order_List ol
+ON ol.Name = a.Name
+INNER JOIN Orders o
+ON o.Number = ol.number
+WHERE o.Number = 103;
+2. All order numbers for each city.
+SELECT o.Number, a.City
+FROM Orders o
+INNER JOIN Order_List ol
+ON ol.number = o.Number
+INNER JOIN Address a
+ON a.Name = ol.name
+GROUP BY a.City;
+
+3. All parts for the order number 103.
+SELECT p.Component
+FROM Parts p
+INNER JOIN Orders o
+ON o.Item = p.Part
+WHERE o.Number = 103;
+4. The total number of parts required.
+SELECT DISTINCT p.Component, COUNT(p.Component) AS 'Required'
+FROM Parts p
+GROUP BY p.Component
+ORDER BY p.Component;
+5. Check if all parts are in the warehouse.
+SELECT DISTINCT p.Component AS 'Component Available'
+FROM Parts p
+INNER JOIN Available a
+ON a.Component = p.Component
+GROUP BY p.Component
+HAVING COUNT(p.Component) <= a.Available
+ORDER BY p.Component;
+6. If some parts are missing, starting form 101, which order cannot be delivered. (manual)
+
+
+
+
+
+7. Show in a graph the total number of ordered items per city.
+SELECT a.City, COUNT(o.Item) as "Items"
+FROM Orders o
+INNER JOIN Order_List ol
+ON ol.number = o.Number
+INNER JOIN Address a
+ON a.Name = ol.Name
+GROUP BY a.City;
+g<-ggplot(table,aes(x=city,y=Items))+geom_col()
+g
