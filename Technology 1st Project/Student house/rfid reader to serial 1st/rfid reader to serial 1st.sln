@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rfid reader to serial 1st", "rfid reader to serial 1st\rfid reader to serial 1st.csproj", "{4709EC54-2F67-4E8E-9090-925852110A57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nursing Bed Alarm", "..\..\..\embedded systems\arduino projects\VS projects\Nursing Bed Alarm\Nursing Bed Alarm.csproj", "{1733F43F-113F-4872-987F-50750DD8514C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4709EC54-2F67-4E8E-9090-925852110A57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4709EC54-2F67-4E8E-9090-925852110A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4709EC54-2F67-4E8E-9090-925852110A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4709EC54-2F67-4E8E-9090-925852110A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1733F43F-113F-4872-987F-50750DD8514C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1733F43F-113F-4872-987F-50750DD8514C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1733F43F-113F-4872-987F-50750DD8514C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1733F43F-113F-4872-987F-50750DD8514C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F125452-6723-423C-815A-BDEA5FD90FA3}
+	EndGlobalSection
+EndGlobal
