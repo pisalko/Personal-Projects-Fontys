@@ -1,5 +1,5 @@
-#define SS_PIN D4  //D2
-#define RST_PIN D3 //D1
+#define SS_PIN 10  //D2
+#define RST_PIN 9 //D1
 
 #include <SPI.h>
 #include <MFRC522.h>
@@ -8,23 +8,15 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance.
 
 String oldContent = "";
 bool once = true;
-bool once2 = true;
 
 void setup()
 {
   Serial.begin(9600);   // Initiate a serial communication
   SPI.begin();      // Initiate  SPI bus
   mfrc522.PCD_Init();   // Initiate MFRC522
-  Serial.flush();
-  Serial.println();
 }
 void loop()
 {
-  if(once2)
-  {
-    Serial.println();
-    once2 = false;
-  }
   // Look for new cards
   if ( ! mfrc522.PICC_IsNewCardPresent())
   {
