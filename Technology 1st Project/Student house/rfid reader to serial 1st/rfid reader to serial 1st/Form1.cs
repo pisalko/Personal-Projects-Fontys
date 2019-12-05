@@ -17,10 +17,18 @@ namespace rfid_reader_to_serial_1st
     {
         String textInPort = "";
         String dataSendToServer = "";
+        String responseFromServer = "";
         public Form1()
         {
-            InitializeComponent();
-            serialPort1.Open();
+            try
+            {
+                InitializeComponent();
+                serialPort1.Open();
+            }
+            catch (Exception errors)
+            {
+                MessageBox.Show("Arduino not connected to the port");
+            }
         }
 
         private void POSTrequest(string uri, String order)
@@ -32,9 +40,9 @@ namespace rfid_reader_to_serial_1st
                 //We specify that it will be a POST request, the WebRequest class enables us to do it that easily
                 request.Method = "POST";
                 //Order is a String which we convert to byte array and later upload to Stream.
-                byte[] buffer = Encoding.UTF8.GetBytes(order);
+                byte[] buffer = Encoding.ASCII.GetBytes(order);
                 //We specify what is sending the request, again WebRequest class makes it easy for us
-                request.ContentType = "Mario's Interface";
+                request.ContentType = "text/plain";
                 //Here we tell the server how long our byte array is (string we are sending) (constructing the header)
                 request.ContentLength = buffer.Length;
                 //We create a Stream type variable and store the requestStream in it
@@ -52,9 +60,12 @@ namespace rfid_reader_to_serial_1st
                 //We use the StreamReader class to read the incoming Stream at ease
                 StreamReader reader = new StreamReader(dataStream);
                 //We save the stream's content data in a String
-                string responseFromServer = reader.ReadToEnd();
+                responseFromServer = reader.ReadToEnd();                
                 //We display the data in the Console for debugging, this helped me a lot when I was building the server on Java with Sockets (I left that code for clarification, we don't use it)
                 Console.WriteLine(responseFromServer);
+                //Here we send the POST request  again if the ESP does not parse it correctly
+                if (responseFromServer == "ne")
+                    POSTrequest(uri, order);
                 //Closing the streams
                 reader.Close();
                 dataStream.Close();
@@ -80,7 +91,8 @@ namespace rfid_reader_to_serial_1st
         {
             textInPort = serialPort1.ReadLine();
             textInPort.Trim();
-            textInPort = textInPort.Replace("\r\n", "").Replace("\r", "").Replace("\n", "");           
+            textInPort = textInPort.Replace("\r\n", "").Replace("\r", "").Replace("\n", "");
+            textInPort = textInPort.Substring(1);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -90,10 +102,44 @@ namespace rfid_reader_to_serial_1st
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            dataSendToServer = "*" + tbName.Text + " " + tbAge.Text + " " + textInPort;
-            textInPort = "";
-            //depending on which room is selected, send to different ESPs
-            POSTrequest("http://192.169.88.250:80/add/", "vale");
+            try
+            {
+                if (textInPort != "")
+                {
+                    if (cbRoom.SelectedItem.ToString() == "Master")
+                    {
+                        textInPort.Trim();
+                                                                    //SEND TO ALL ESPs
+                        dataSendToServer = "*" + tbName.Text + " " + tbAge.Text + " " + textInPort;
+                        //MessageBox.Show("*" + textInPort + "*");
+                                                                    //depending on which room is selected, send to different ESPs
+                        
+                        POSTrequest("http://192.168.43.114/add", textInPort);                      
+                        dataSendToServer = "";
+                        textInPort = "";
+                    }
+                    else if (cbRoom.SelectedItem.ToString() == "Room 1")
+                    {
+                        textInPort.Trim();
+                                                                    //SEND TO ESP with room 1
+                        dataSendToServer = "*" + tbName.Text + " " + tbAge.Text + " " + textInPort;
+
+                                                                    //depending on which room is selected, send to different ESPs
+
+                        POSTrequest("http://192.168.43.114/add", textInPort); //ESP 1                       
+                        dataSendToServer = "";
+                        textInPort = "";
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("RFID tag not read properly. Please put the tag on the reader again !");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Please fill all fields before attempting to register new user !");
+            }
         }
     }
 }

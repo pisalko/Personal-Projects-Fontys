@@ -37,7 +37,7 @@
             this.tbAge = new System.Windows.Forms.TextBox();
             this.lbName = new System.Windows.Forms.Label();
             this.lbAge = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbRoom = new System.Windows.Forms.ComboBox();
             this.lbRoom = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -54,7 +54,7 @@
             // btnRegister
             // 
             this.btnRegister.Location = new System.Drawing.Point(15, 192);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(187, 28);
             this.btnRegister.TabIndex = 1;
@@ -105,13 +105,17 @@
             this.lbAge.TabIndex = 5;
             this.lbAge.Text = "Age:";
             // 
-            // comboBox1
+            // cbRoom
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(102, 147);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 24);
-            this.comboBox1.TabIndex = 6;
+            this.cbRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbRoom.FormattingEnabled = true;
+            this.cbRoom.Items.AddRange(new object[] {
+            "Room 1",
+            "Master"});
+            this.cbRoom.Location = new System.Drawing.Point(102, 147);
+            this.cbRoom.Name = "cbRoom";
+            this.cbRoom.Size = new System.Drawing.Size(100, 24);
+            this.cbRoom.TabIndex = 6;
             // 
             // lbRoom
             // 
@@ -128,14 +132,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.lbRoom);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbRoom);
             this.Controls.Add(this.lbAge);
             this.Controls.Add(this.lbName);
             this.Controls.Add(this.tbAge);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.lbUID);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
@@ -155,7 +159,7 @@
         private System.Windows.Forms.TextBox tbAge;
         private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.Label lbAge;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbRoom;
         private System.Windows.Forms.Label lbRoom;
     }
 }
