@@ -54,6 +54,8 @@ void loop()
     oldContent = content;
     
   }
+  content = content.substring(1);
+  content = content.concat('\n');
   
   if (oldContent != content || once)
   {
