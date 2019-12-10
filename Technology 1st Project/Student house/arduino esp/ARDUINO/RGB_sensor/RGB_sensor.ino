@@ -30,11 +30,11 @@ void loop() {
   digitalWrite(S3,LOW);
   // Reading the output frequency
   frequency = pulseIn(sensorOut, LOW);
-  frequency = map(frequency, 40, 410, 255, 0);
+  /*frequency = map(frequency, 40, 410, 255, 0);
   if( frequency < 0)
   frequency = 0;
   if( frequency > 255)
-  frequency = 255;
+  frequency = 255;*/
   // Printing the value on the serial monitor
   Serial.print("R= ");//printing name
   Serial.print(frequency);//printing RED color frequency
